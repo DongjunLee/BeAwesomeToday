@@ -4,15 +4,15 @@
 
 ### Categories
 
-- [AI](http://humanbrain.in/awesome-AI/)
-- [Algorithm](http://humanbrain.in/awesome-Algorithm/)
-- [Data Science](http://humanbrain.in/awesome-data-science/)
-- [Deep Learning](http://humanbrain.in/awesome-deep-learning/)
-- [Kaggle](http://humanbrain.in/awesome-kaggle/)
-- [Machine Learning](http://humanbrain.in/awesome-machine-learning/)
-- [Python](http://humanbrain.in/awesome-python/)
-- [Scala](http://humanbrain.in/awesome-Scala/)
-- [Spark](http://humanbrain.in/awesome-spark/)
+- [AI](https://github.com/DongjunLee/TIL-MAL/blob/master/AI/Awesome-AI.md)
+- [Algorithm](https://github.com/DongjunLee/TIL-MAL/blob/master/Algorithm/Awesome-AIgorithm.md)
+- [Data Science](https://github.com/DongjunLee/TIL-MAL/tree/master/Data%20Science)
+- [Deep Learning](https://github.com/DongjunLee/TIL-MAL/tree/master/Deep%20Learning)
+- [Kaggle](https://github.com/DongjunLee/TIL-MAL/blob/master/Kaggle/Awesome-Kaggle.md)
+- [Machine Learning](https://github.com/DongjunLee/TIL-MAL/blob/master/Machine%20Learning/Awesome-Machine-Learning.md)
+- [Python](https://github.com/DongjunLee/TIL-MAL/blob/master/Python/Awesome-Python.md)
+- [Scala](https://github.com/DongjunLee/TIL-MAL/blob/master/Scala/Awesome-Scala.md)
+- [Spark](https://github.com/DongjunLee/TIL-MAL/blob/master/Spark/Awesome-Spark.md)
 
 ## Today I Learned
 

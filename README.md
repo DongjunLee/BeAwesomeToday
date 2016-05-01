@@ -6,8 +6,8 @@
 
 - [AI](https://github.com/DongjunLee/TIL-MAL/blob/master/AI/Awesome-AI.md)
 - [Algorithm](https://github.com/DongjunLee/TIL-MAL/blob/master/Algorithm/Awesome-AIgorithm.md)
-- [Data Science](https://github.com/DongjunLee/TIL-MAL/tree/master/Data%20Science.md)
-- [Deep Learning](https://github.com/DongjunLee/TIL-MAL/tree/master/Deep%20Learning.md)
+- [Data Science](https://github.com/DongjunLee/TIL-MAL/blob/master/Data%20Science/Awesome-Data-Science.md)
+- [Deep Learning](https://github.com/DongjunLee/TIL-MAL/blob/master/Deep%20Learning/Awesome-Deep-Learning.md)
 - [Kaggle](https://github.com/DongjunLee/TIL-MAL/blob/master/Kaggle/Awesome-Kaggle.md)
 - [Machine Learning](https://github.com/DongjunLee/TIL-MAL/blob/master/Machine%20Learning/Awesome-Machine-Learning.md)
 - [Python](https://github.com/DongjunLee/TIL-MAL/blob/master/Python/Awesome-Python.md)

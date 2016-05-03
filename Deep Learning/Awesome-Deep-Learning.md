@@ -40,6 +40,9 @@ Neural Networks(AlexNet)](http://papers.nips.cc/paper/4824-imagenet-classificati
 10. [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](http://arxiv.org/abs/1502.03167) by S Ioffe, 2015
 11. [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](http://arxiv.org/abs/1511.06434) by A Radford, 2016
 12. [Conditional Random Fields as Recurrent Neural Networks](http://www.robots.ox.ac.uk/~szheng/papers/CRFasRNN.pdf) by S Zheng
+13. [TensorFlow(White paper):
+Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://download.tensorflow.org/paper/whitepaper2015.pdf) by Google, 2015 [Summary](https://github.com/samjabrahams/tensorflow-white-paper-notes)
+
 
 ## Frameworks
 

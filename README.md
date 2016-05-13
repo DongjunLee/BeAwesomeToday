@@ -27,17 +27,21 @@
 
 - [Coding](https://github.com/DongjunLee/TIL-MAL#coding)
 - [CSS](https://github.com/DongjunLee/TIL-MAL#css)
+- [Deep Learning](https://github.com/DongjunLee/TIL-MAL#deep-learning)
+- [Python](https://github.com/DongjunLee/TIL-MAL#python)
+
 
 ### Contents
-
-#### Deep Learning
-- [Tensorboard-Basic](https://github.com/DongjunLee/TIL-MAL/blob/master/Deep%20Learning/Tensorboard-Basic.md)
 
 #### Coding
 - [Iterator Pattern](https://github.com/DongjunLee/TIL-MAL/blob/master/Code/Iterator.md)
 
 #### CSS
 - [CSS Units, 길이 단위](https://github.com/DongjunLee/TIL-MAL/blob/master/CSS/CSS_Units.md)
+
+#### Deep Learning
+- [Tensorboard-Basic](https://github.com/DongjunLee/TIL-MAL/blob/master/Deep%20Learning/Tensorboard-Basic.md)
+- [TensorFlow White Paper Summery(kor)](https://github.com/DongjunLee/TIL-MAL/blob/master/Deep%20Learning/Tensorflow-whitepaper-summary_kor.md) - ing..
 
 #### Python
 - [Pickle Protocol](https://github.com/DongjunLee/TIL-MAL/blob/master/Python/Pickle_Protocols.md)

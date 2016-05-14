@@ -4,16 +4,16 @@
 
 ### Categories
 
-- [AI](https://github.com/DongjunLee/TIL-MAL/blob/master/AI/Awesome-AI.md)
-- [Algorithm](https://github.com/DongjunLee/TIL-MAL/blob/master/Algorithm/Awesome-AIgorithm.md)
-- [Data Science](https://github.com/DongjunLee/TIL-MAL/blob/master/Data%20Science/Awesome-Data-Science.md)
-- [Deep Learning](https://github.com/DongjunLee/TIL-MAL/blob/master/Deep%20Learning/Awesome-Deep-Learning.md)
-- [JavaScript](https://github.com/DongjunLee/TIL-MAL/blob/master/JavaScript/Awesome-JavaScript.md)
-- [Kaggle](https://github.com/DongjunLee/TIL-MAL/blob/master/Kaggle/Awesome-Kaggle.md)
-- [Machine Learning](https://github.com/DongjunLee/TIL-MAL/blob/master/Machine%20Learning/Awesome-Machine-Learning.md)
-- [Python](https://github.com/DongjunLee/TIL-MAL/blob/master/Python/Awesome-Python.md)
-- [Scala](https://github.com/DongjunLee/TIL-MAL/blob/master/Scala/Awesome-Scala.md)
-- [Spark](https://github.com/DongjunLee/TIL-MAL/blob/master/Spark/Awesome-Spark.md)
+- [AI](AI/Awesome-AI.md)
+- [Algorithm](Algorithm/Awesome-AIgorithm.md)
+- [Data Science](Data%20Science/Awesome-Data-Science.md)
+- [Deep Learning](Deep%20Learning/Awesome-Deep-Learning.md)
+- [JavaScript](JavaScript/Awesome-JavaScript.md)
+- [Kaggle](Kaggle/Awesome-Kaggle.md)
+- [Machine Learning](Machine%20Learning/Awesome-Machine-Learning.md)
+- [Python](Python/Awesome-Python.md)
+- [Scala](Scala/Awesome-Scala.md)
+- [Spark](Spark/Awesome-Spark.md)
 
 ## Today I Learned
 
@@ -25,23 +25,25 @@
 
 ### Categories
 
-- [Coding](https://github.com/DongjunLee/TIL-MAL#coding)
-- [CSS](https://github.com/DongjunLee/TIL-MAL#css)
-- [Deep Learning](https://github.com/DongjunLee/TIL-MAL#deep-learning)
-- [Python](https://github.com/DongjunLee/TIL-MAL#python)
+- [Coding](#coding)
+- [CSS](#css)
+- [Deep Learning](#deep-learning)
+- [Python](#python)
 
 
 ### Contents
 
 #### Coding
-- [Iterator Pattern](https://github.com/DongjunLee/TIL-MAL/blob/master/Code/Iterator.md)
+- [Iterator Pattern](Code/Iterator.md)
 
 #### CSS
-- [CSS Units, 길이 단위](https://github.com/DongjunLee/TIL-MAL/blob/master/CSS/CSS_Units.md)
+- [CSS Units, 길이 단위](CSS_Units.md)
 
 #### Deep Learning
-- [Tensorboard-Basic](https://github.com/DongjunLee/TIL-MAL/blob/master/Deep%20Learning/Tensorboard-Basic.md)
-- [TensorFlow White Paper Summery(kor)](https://github.com/DongjunLee/TIL-MAL/blob/master/Deep%20Learning/Tensorflow-whitepaper-summary_kor.md) - ing..
+- [Tensorboard-Basic](Deep%20Learning/Tensorboard-Basic.md)
+- [TensorFlow White Paper Summery(kor)](Deep%20Learning/Tensorflow-whitepaper-summary_kor.md) - ing..
 
 #### Python
-- [Pickle Protocol](https://github.com/DongjunLee/TIL-MAL/blob/master/Python/Pickle_Protocols.md)
+- [Pickle Protocol](Python/Pickle_Protocols.md)
+- [PEP2_Kor](Python/PEP_8/README.md)
+- [Effective_Python_Notes](Python/Effective_Python_Summary/README.md)

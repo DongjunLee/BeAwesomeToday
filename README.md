@@ -37,7 +37,7 @@
 - [Iterator Pattern](Code/Iterator.md)
 
 #### CSS
-- [CSS Units, 길이 단위](CSS_Units.md)
+- [CSS Units, 길이 단위](CSS/CSS_Units.md)
 
 #### Deep Learning
 - [Tensorboard-Basic](Deep%20Learning/Tensorboard-Basic.md)
@@ -45,5 +45,5 @@
 
 #### Python
 - [Pickle Protocol](Python/Pickle_Protocols.md)
-- [PEP2_Kor](Python/PEP_8/README.md)
+- [PEP8_Kor](Python/PEP_8/README.md)
 - [Effective_Python_Notes](Python/Effective_Python_Summary/README.md)

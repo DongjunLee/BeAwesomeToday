@@ -1,45 +1,27 @@
-# TensorFlow White Paper Notes
-
-내가 요약하기는 귀찮아서.. 번역을 할 예정.
-
-## Features
-
-* Notes broken down section by section, as well as subsection by subsection
-* Relevant links to documentation, resources, and references throughout
-* SVG versions of figures/graphs
-* So many bullet points!
-
-### To-do list
-
-* Create and utilize anchor tags throughout notes for self-navigating
-
-_[White Paper available at this link](http://download.tensorflow.org/paper/whitepaper2015.pdf)_
-
-- - -
-
 # TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems
 
 ## Abstract
 
-* [**TensorFlow**](https://www.tensorflow.org/) is both an interface for expressing machine learning algorithms and an implentation to execute them
-* Code can be transported across various machine architectures with little to no changes to the code
-* Has been used at Google for all manner of machine learning tasks
-* [Reference implementation and API released under Apache 2.0 license](https://github.com/tensorflow/tensorflow)
+* [**TensorFlow**](https://www.tensorflow.org/) 는 머신러닝 알고리즘을 표현하고 실행하기 위한 인터페이스.
+*  코드의 변경없이 다양한 머신에서 사용이 가능. (스마트폰, 태블릿부터 분산시스템, 많은 GPU머신 등..)
+*  구글 머신러닝 관련한 일에서 사용 중.
+*  이 논문은 TensorFlow의 Interface에 대해서 소개함.
+*  Apache 2.0 license
 
 - - -
 
 ## 1 Introduction
 
-* Google Brain started in 2011, and [**DistBelief**](http://static.googleusercontent.com/media/research.google.com/en//archive/large_deep_networks_nips2012.pdf) was its first-generation scalable, distributed machine learning system
-* DistBelief was used for a large number of research and commercial tasks
-* TensorFlow, Google's second-generation machine learning system, was designed from lessons learned in the process of engineering and using DistBelief
-* The TensorFlow API is used to describe a dataflow-like model, and the implementation then maps those models onto the underlying machine hardware
-* This allows users to have a single system that runs on a broad spectrum of machines, reducing overhead caused from rewriting code for different hardware
-* Focus of development was to maintain flexibility for research purposes while  attaining enough performance to be used in production
-* Can express various types of parallelism by replicating the dataflow model across multiple machines and running them in parallel
-	* Some functions within TensorFlow allow for less consistency in parallelism if desired
-		* Larger, multiple machine uses of TensorFlow can take advantage of less-strict synchronization requirements
-* TensorFlow is more flexible, faster, and supports more machine learning models than DistBelief
+* 2011년에 Google Brain Project로 시작.
+* [**DistBelief**](http://static.googleusercontent.com/media/research.google.com/en//archive/large_deep_networks_nips2012.pdf) 이라는 1세대 분산 시스템을 구현. DistBelief로 각종 머신러닝 연구를 수행하고 다양한 product도 만듬. 
+* TensorFlow는 2세대 분산 시스템으로서 DistBelief을 Base로 개발.
+* TensorFlow API는 dataflow-like model로 묘사되어지고, 각 머신에 맞게 모델이 구현되어 있음.
+* 코드의 수정없이 다양한 머신에서 사용이 가능하므로, 기기에 따른 코드 작성이 필요 없다.
+* 빠르게 새로운 모델로 연구에 집중할 수 있는 유연함과 높은 퍼포먼스.
+* dataflow model을 여러 머신들에 복사해서 병렬처리함으로, 사용자가 쉽게 병렬계산을 표현할 수 있게 해줌(shared parameter나 다른 state를 업데이트 함.)
+* 크고, 다수의 머신으로 TensorFlow를 사용할 경우 Synchronization 요구사항에 더 자유로울 수 있는 장점이 있음.
+* DistBelief로 구현했던 프로젝트들이 TensorFlow로 구현 되었음.
+
 
 - - -
 

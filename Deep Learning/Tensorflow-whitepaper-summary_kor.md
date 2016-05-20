@@ -27,28 +27,26 @@
 
 ## 2 Programming Model and Basic Concepts
 
-* TensorFlow computations are represented by [_directed graphs_](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Graph), which are composed of _nodes_
-* Some nodes are able to maintain and update a persistent state and/or have some sort of branching and looping structures
-	* This branching/looping is modeled similarly to [MSR's Naiad](http://research.microsoft.com:8082/pubs/201100/naiad_sosp2013.pdf)
-* Graphs are constructed using supported front-end languages (C++/Python as of writing)
-* A Node has zero or more inputs/outputs, and it represents an [_operation_](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Operation)
-* Values of 'normal' edges (the connection between one node's output to another node's input) are [_tensors_](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Tensor), n-dimensional arrays.
-	* The type of each element in the tensor is inferred while the graph is being constructed, prior to execution
-* There are 'special' edges, called [_control dependencies_](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Graph.control_dependencies): no model data is transferred on these edges, rather they indicate that the source node must finish execution before the destination node begins execution
-	* Can be thought of as a baton in a relay race. Attaching a control dependency means that the next node can't begin running until the previous node 'hands off' the baton.
-	* Used by client to enforce happens-before relations
-	* Used in reference implementation to manage memory usage
-
-
+* TensorFlow의 계산은 노드의 구성인 [Directed graphs](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Graph)로 표현된다.
+* 노드들은 영속적인 상태를 유지하거나 업데이트가 가능하다. 이것들은 Branching, Looping Structure들에 사용된다. 
+	* [MSR's Naiad](http://research.microsoft.com:8082/pubs/201100/naiad_sosp2013.pdf) 모델고 유사함.
+* 그래프들은 C++/Python 언어를 지원한다.
+* [**Operation**](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Operation) : Input과 Output들을 가지는 노드를 Operator의 인스턴스라 한다.
+* [**Tensors**](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Tensor) : Output에서 Input를 가지는 그래프 안의 Normal edge들을 흐르는 값.(N-차 배열)
+	* Tensor의 각 타입은 실행 전, 그래프 생성 중에 추론된다. 
+* [**Control dependencies**](https://www.tensorflow.org/versions/master/api_docs/python/framework.html#Graph.control_dependencies) : 데이터가 흐르지는 않으나, 실행 중에 디펜던시를 결정해주는 노드. (ex. 마지막 노드전에 실행되어야 하는 노드를 가리킴)
+	* 사용자가 노드간의 관계를 직접적으로 설정하는데 사용
+	* 메모리 사용량을 관리하는 것에도 사용 됨.
 
 ### Operations and Kernels
 
-* Operations have names and represent an abstract computation, such as ["matrix multiply"](https://www.tensorflow.org/versions/master/api_docs/python/math_ops.html#matmul) or ["add"](https://www.tensorflow.org/versions/master/api_docs/python/math_ops.html#add)
-* Operations can optionally require _attributes_. Attributes must be explicitly provided or be possible to infer prior to running the graph
-	* A common use of attributes is to declare which data type the operation is being performed with (i.e. float tensors vs. int32 tensors)
-* A _kernel_ is an implementation of an operation designed for specific types of devices, such as CPU or GPU
-* The TensorFlow library includes several built-in operations/kernels. The table below lists some of them:
+* Operation은 추상적인 연산으로 표현된다. (ex. Matrix multiply, add)
+* Operation은 Attribute을 가지고, 이 속성은 그래프가 생성될 때 노드를 구체적으로 명시 된다.
+	* Attribute의 일반적인 사용은 타입이 다른 Tensor간의(다형의) Operation을 만들 때.
 
+* **Kernel** : 특정 디바이스의 타입(ex. CPU, GPU)의 Operation이 구현하고 있는 것.
+* TensorFlow는 다양한 Operation과 kernel들을 가지고 있다.
+	
 Category | Examples
 ---|---
 Element-wise mathematical operations | Add, Sub, Mul, Div, Exp, Log, Greater, Less, Equal
@@ -60,7 +58,7 @@ Checkpointing operations | Save, Restore
 Queue and synchronization operations | Enqueue, Dequeue, MutexAcquire, MutexRelease
 Control flow operations | Merge, Switch, Enter, Leave, NextIteration
 
-_Check out [this directory in the TensorFlow repository](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/kernels) for kernel implementations_
+커널은 이 링크를 통해 확인할 수 있다. [TensorFlow repository for Kernel](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/kernels)
 
 ### Sessions
 

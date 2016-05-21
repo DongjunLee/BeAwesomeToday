@@ -19,6 +19,46 @@ Post-History: 05-Jul-2001, 01-Aug-2013
 번역일: 13-May-2013  
 번역자: keniallee@gmail.com (이수겸), ehdwns2045@gmail.com (이동준) 추가번역
 
+## Contents
+
+- [Introduction](#문서-소개)
+- [A Foolish Consistency is the Hobgoblin of Little Minds](#a-foolish-consistency-is-the-hobgoblin-of-little-minds)
+- [Code lay-out](#코드-레이아웃)
+	- [Indentation](#들여쓰기)
+	- Tabs or Spaces?
+	- Maximum Line Length
+	- Should a line break before or after a binary operator?
+	- Blank Lines
+	- Source File Encoding
+	- Imports
+- String Quotes
+- Whitespace in Expressions and Statements
+	- Pet Peeves
+	- Other Recommendations
+- Comments
+	- Block Comments
+	- Inline Comments
+	- Documentation Strings
+- Version Bookkeeping
+- Naming Conventions
+	- Overriding Principle
+	- Descriptive: Naming Styles
+	- Prescriptive: Naming Conventions
+		- Names to Avoid
+		- Package and Module Names
+		- Class Names
+		- Exception Names
+		- Global Variable Names
+		- Function Names
+		- Function and method arguments
+		- Method Names and Instance Variables
+		- Constants
+		- Designing for inheritance
+	- Public and internal interfaces
+- Programming Recommendations
+	- Function Annotations
+- References
+- Copyright
 
 ## 문서 소개
 
@@ -100,6 +140,11 @@ def long_function_name(
         var_one, var_two, var_three,
         var_four):
     print(var_one)
+    
+# Hanging indents 가 한 단계 추가되어야 한다.
+foo = long_function_name(
+    var_one, var_two,
+    var_three, var_four)
 ```
 나쁜 예::
 
@@ -122,30 +167,59 @@ foo = long_function_name(
   var_one, var_two,
   var_three, var_four)
 ```
+
+ if 조건문이 수줄이 될 정도로 길때, 키워드(if)를 조합하는 것은 가치가 없다. 몇줄로 작성해야하는 라인을 위해서 한개의 빈칸을 더하고, 개행문을 더해서 자연스러운 4자리 들여쓰기를 만들어라. 이것은 if문에서 중첩된 코드들을 시각적으로 충돌되는 것을 보인다. 이 PEP는 중첩되어 있는 조건부라인에 대해서 분명한 입장을 가지고 있지 않다. 각 상황에 따라서 의견을 받아들이되, 제한사항이 아님을 알자:
+ 
+```python
+# 추가의 들여쓰기가 없을 때.
+if (this_is_one_thing and
+    that_is_another_thing):
+    do_something()
+```
+
+```python
+# 이 에디터에서 구별하는 것에 따라 코멘트를 달아준다.
+# 구문 강조를 지원
+if (this_is_one_thing and
+    that_is_another_thing):
+    # Since both conditions are true, we can frobnicate.
+    do_something()
+```
+
+```python
+# 조건부 라인 아래에 추가로 들여쓰기를 더 한다.
+if (this_is_one_thing
+        and that_is_another_thing):
+    do_something()
+```
+
+(또한 열고 닫는 binary operatoer 들에 대한 토의를 밑에서 보자.)
+
 여러 줄에 걸친 괄호/중괄호/대괄호를 닫을 경우 리스트의 마지막 항목에
 맞추어 다음 줄에 닫는 표시를 할 수 있다. 다음 코드를 보자:
 
-    my_list = [
-        1, 2, 3,
-        4, 5, 6,
-        ]
-    result = some_function_that_takes_arguments(
-        'a', 'b', 'c',
-        'd', 'e', 'f',
-        )
-
+```python
+my_list = [
+    1, 2, 3,
+    4, 5, 6,
+    ]
+result = some_function_that_takes_arguments(
+    'a', 'b', 'c',
+    'd', 'e', 'f',
+    )
+```
 혹은 이렇게 여러 줄에 걸친 코드의 첫 번째 문자 위치에 닫는 표시를 넣
 을 수도 있다. 다음 코드를 보자:
-
-    my_list = [
-        1, 2, 3,
-        4, 5, 6,
-    ]
-    result = some_function_that_takes_arguments(
-        'a', 'b', 'c',
-        'd', 'e', 'f',
-    )
-
+```python
+my_list = [
+    1, 2, 3,
+    4, 5, 6,
+]
+result = some_function_that_takes_arguments(
+    'a', 'b', 'c',
+    'd', 'e', 'f',
+)
+```
 
 탭이냐 공백이냐
 ---------------

@@ -38,6 +38,40 @@
 	* 사용자가 노드간의 관계를 직접적으로 설정하는데 사용
 	* 메모리 사용량을 관리하는 것에도 사용 됨.
 
+#### Figure 1: Example TensorFlow code fragment
+```python
+	import tensorflow as tf
+	
+	# 100-d vector, init to zeros
+	b = tf.Variable (tf.zeros([100])
+	
+	# 784x100 matrix with random values
+	W = tf.Variable(tf.random_uniform([784,100], -1, 1))
+	
+	# Placeholder for input
+	x = tf.placehoder(name="x")
+	
+	# Rectified linear unit of (W*x +b)
+	relu = tf.nn.relu(tf.matmul(W, x) + b)
+	
+	# Cost computed as a function of relu
+	C = [...]
+	
+	# Instantiate a Session
+	s = tf.Session()
+	
+	for step in xrange(0, 10):
+		# Create a 100-d vector for input
+		input = ...construct 100-D input array ...
+		
+		# Find the cost, using the constructed vector as the placeholder input
+		result = s.run(C, feed_dict = {x: input})
+		print step, result
+```
+
+#### Figure 2: Corresponding computation graph for Figure 1
+<img src="http://cdn.rawgit.com/samjabrahams/tensorflow-white-pages-notes/master/img/figure2.svg" id="figure2" style="max-height: 300px"></img>
+
 ### Operations and Kernels
 
 * Operation은 추상적인 연산으로 표현된다. (ex. Matrix multiply, add)
@@ -62,44 +96,49 @@ Control flow operations | Merge, Switch, Enter, Leave, NextIteration
 
 ### Sessions
 
-* Clients interact with TensorFlow by creating a [_Session_](https://www.tensorflow.org/versions/master/api_docs/python/client.html#Session), which supports two main functions: _Extend_ and [_Run_](https://www.tensorflow.org/versions/master/api_docs/python/client.html#Session.run)
-	* The Extend method adds additional nodes and edges to the existing dataflow model
-		* _Note: Extend is called automatically by TensorFlow, not directly by the client_
-	* Run takes as argument a set of named nodes to be computed as well as an optional set of tensors to be used in place of certain node outputs. It then uses the graph to figure all nodes required to compute the requested outputs, and performs them in a order that respects their dependencies.
-* Most TensorFlow programs setup a graph within a Session once, and then run the full graph or subsets of the graph multiple times.
+* 사용자는 Session을 통해 TensorFlow에 상호작용을 한다. Session은 _Extend_ 와 _Run_ 두가지 주요 기능을 제공한다.
+	* **Extend** : 추가적인 노드나 엣지를 dataflow에 추가할 수 있는 메소드(TensorFlow가 자동으로 콜을 하여 사용)
+	* [**Run**](https://www.tensorflow.org/versions/master/api_docs/python/client.html#Session.run) : 결과로 받을 Output의 이름을 넣고, 관련된 값들을 feed 하여서 실행하도록 할 수 있다. 이때 Graph를 통해 Output을 계산하기 위해 필요한 모든 노드의 dependency를 파악하고, 순서대로 실행한다.
+* 대부분의 TensorFlow 프로그램은 Session과 함께 Graph를 한 번 셋팅하고 여러번 Run을 하여 그래프의 일부 또는 전체를 사용하는 방식이다.
 
 ### Variables
 
-* A [_Variable_](https://www.tensorflow.org/versions/master/api_docs/python/state_ops.html#Variable) is a handle to a persistent and mutable tensor which survives each execution of a graph
+* [**Variable**](https://www.tensorflow.org/versions/master/api_docs/python/state_ops.html#Variable) : 변수는 Graph에서 실행되는 영속적인 가변성의 Tensor를 다룬다.
+	* 예를 들어, Assign 와 AssignAdd(+= 와 동일) 의 Operation들로 변화를 줄 수 있음.
+* 머신러닝 문제들에서, Hyperparameter들은 변수로서 관리된다.
 * For ML tasks, learned parameters are usually held in TensorFlow Variables
 
-_See the official [How-To](https://www.tensorflow.org/versions/master/how_tos/variables/index.html) to learn more about TensorFlow Variables_
+변수에 대한 사용법을 더 보고 싶다면.. 다음 링크로 [How-To](https://www.tensorflow.org/versions/master/how_tos/variables/index.html)
 
 - - -
 
 ## 3 Implementation
 
-* There are three primary components in a TensorFlow system: the _client_, the _master_, and _worker processes_
-	* The client uses a Session interface to communicate with the master
-	* The master schedules and coordinates worker processes and relays results back to the client
-	* Worker processes are responsible for maintaining access to devices such as CPU/GPU cores and execute graph nodes on their respective devices
-* There are both local and distributed implementations of TensorFlow, ~~but only the local version has been open-sourced as of writing~~
-	* **Update as of February 2016:** The initial open-source implementation of the TensorFlow distributed runtime is [available on the TensorFlow GitHub repository.](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/distributed_runtime) However, using it at this time requires building TensorFlow from source, and full API documentation is not yet available.
+* TensorFlow 시스템의 주요 구성요소는 _client_, _master_, _worker process_ 이다.
+	* client : Session 인터페이스를 통해 master를 다루는 유저(회장).
+	* master : worker process 들의 스케쥴을 정하고 배치하며(부장), 결과값을 client에서 전달한다.
+	* worker process : 기기의 코어(CPU, GPU)에 접근하여 각각 devices에 맞게 Graph 노드들을 실행하는 역할(일꾼)
+* TensorFlow는 local(싱글머신), distributed(분산처리환경) 모두 인터페이스를 제공한다. 
+	* 0.8버전이 릴리즈되면서 [분산처리]((https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/distributed_runtime))가 가능한 버젼이 배포되었다.
+
+#### Figure 3: Single machine (left) and distributed system (right) structure
+<img src="http://cdn.rawgit.com/samjabrahams/tensorflow-white-pages-notes/master/img/figure3.svg" id="figure3" style="max-height: 300px"></img>
 
 ### Devices
 
-* Each device has both a device type and a name
-	* Names are composed of the device's type, its index in a worker process, and (when used in a distributed setting) an identification of the job and task of the worker process
-	* Example device names:  
+* worker 들은 하나 이상의 device를 가진다.
+* 각각 Device는 Type과 Name을 가진다.
+	* 이름은 device의 type과, worker process에 할당된 인덱스, job식별자, task로 구성되어 있다.
+	* device name의 예시:  
 	Local: `/job:localhost/device:cpu:0`  
 	Distributed: `/job:worker/task:17/device:gpu:3`
-* A device object manages its device's memory and executes kernels as requested
+* device object는 해당 device의 메모리를 관리하고 kernel들을 실행한다.
 
 ### Tensors
 
-* Typed, multi-dimensional array
-* Memory management of tensors is handled automatically
-* Available types (from the [TensorFlow documentation](https://www.tensorflow.org/versions/master/resources/dims_types.html#data-types)):  
+* Typed, n-차 차열
+* Tensor의 메모리는 자동적으로 관리됨.
+* Tensor type 목록표 ([TensorFlow documentation](https://www.tensorflow.org/versions/master/resources/dims_types.html#data-types)):  
 
 Data type | Python type | Description
 --- | --- | ---
@@ -553,42 +592,6 @@ _Feature implementations that are most similar to TensorFlow are listed after th
 
 ## Figures
 
-#### Figure 1: Example TensorFlow code fragment
-```python
-	import tensorflow as tf
-	
-	# 100-d vector, init to zeros
-	b = tf.Variable (tf.zeros([100])
-	
-	# 784x100 matrix with random values
-	W = tf.Variable(tf.random_uniform([784,100], -1, 1))
-	
-	# Placeholder for input
-	x = tf.placehoder(name="x")
-	
-	# Rectified linear unit of (W*x +b)
-	relu = tf.nn.relu(tf.matmul(W, x) + b)
-	
-	# Cost computed as a function of relu
-	C = [...]
-	
-	# Instantiate a Session
-	s = tf.Session()
-	
-	for step in xrange(0, 10):
-		# Create a 100-d vector for input
-		input = ...construct 100-D input array ...
-		
-		# Find the cost, using the constructed vector as the placeholder input
-		result = s.run(C, feed_dict = {x: input})
-		print step, result
-```
-
-#### Figure 2: Corresponding computation graph for Figure 1
-<img src="http://cdn.rawgit.com/samjabrahams/tensorflow-white-pages-notes/master/img/figure2.svg" id="figure2" style="max-height: 300px"></img>
-
-#### Figure 3: Single machine (left) and distributed system (right) structure
-<img src="http://cdn.rawgit.com/samjabrahams/tensorflow-white-pages-notes/master/img/figure3.svg" id="figure3" style="max-height: 300px"></img>
 
 #### Figure 4: Before and after insertion of Send/Recieve nodes
 <img src="http://cdn.rawgit.com/samjabrahams/tensorflow-white-pages-notes/master/img/figure4.svg" id="figure4" style="max-height: 300px"></img>

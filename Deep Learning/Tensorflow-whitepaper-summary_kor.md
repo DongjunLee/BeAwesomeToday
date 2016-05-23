@@ -158,39 +158,43 @@ Data type | Python type | Description
 
 ## 3.1 Single-Device Execution
 
-_**NOTE:** To reiterate- in this context, "single device" means using a single CPU core or single GPU, **not** a single machine. Similarly, "multi-device" does not refer to multiple machines, but to multiple CPU cores and/or GPUs. See "3.3 Distributed Execution" for multiple machine discussion._
+_**NOTE:** 여기서 "single device"의 의미는 하나의 머신이 아닌, 하나의 CPU 혹은 GPU를 말합니다. "multi-device" 또한 마찬가지로 여러개의 머신을 말하는 것이 아닌 여러개의 CPU, GPU를 이야기합니다.
 
-* Overview of the execution of a single-worker process, single-device job:
-	1. All nodes required to compute the desired output node(s) are determined
-	2. Each node is given a count of dependencies that need to be completed before it can begin execution
-	3. When a node's dependency count is zero, it is added to a ready queue
-	4. The ready queue delegates node kernel execution to device objects
-	5. When a node completes execution, the counts of all dependant nodes are decremented
-	6. Repeat steps 3-5 until the desired output is computed
+* Single device 실행에 대한 Overview :
+	1. 모든 노드는 결정되어진 Output 노드들이 필요.
+	2. 각각의 노드는 실행전에 dependecy들이 숫자가 주어짐.
+	3. dependency 숫자가 0이 되었을 때, ready queue에 추가.
+	4. ready queue는 device object에게 노드 커널을 수행하도록 위임.
+	5. 노드의 실행이 끝났을 때, dependant 노드의 수가 감소
+	6. Output이 계산될 때까지, 3~5단계를 반복. 
 
 ## 3.2 Multi-Device Execution
 
-* There are two main challenges introduced when using multiple devices:
-	* Deciding which device should process each node
-	* Managing communication between devices as necessary after assigning nodes
+* multiple device를 사용할 때는 2가지 challenges가 존재:
+	* 어떤 device로 작업을 진행할 것인지
+	* 노드가 할당된 후, device간의 communication 관리
 
 ### Node Placement
 
-* One of the main responsibilities of the TensorFlow implementation is to map computation onto available devices
-* The following is a simplified version of this mapping algorithm:
-	1. A cost model is input into the algorithm
-		* The cost model contains estimates of of the input/output tensors (in bytes) and estimated computation time for each node in the graph
-	2. Using the cost model, the algorithm simulates an execution of the graph to make node-placement decisions as described below:
-		1. Starting with the source nodes, a set of feasible devices is considered for each node ready to be executed
-			* A "feasible" device is one that has a kernel implementation for the given operation
-			* A node is ready for execution once its dependencies have finished running
-		2. If a node has multiple feasible devices, the computation time of the node is examined with respect to placing the node on each possible device
-			* This examination takes into account the execution time of the operation (given the device type), as well as the costs of possibly introducing communication between devices.
-		3. The device that would finish the operation the soonest is selected as the node's device.
-		4. Repeat steps 1-3 for each node in the graph execution until all nodes have been allocated to devices
-	3. After the simulation, the real execution runs using the node-placement decisions made during the simulation
-* Section 4.3 will describe some extensions to help guide the placement algorithm
-* Improving the placement algorithm's development is an ongoing process as of writing
+* TensorFlow 구현의 주요 요소중 하나는 가능한 device들에 연산을 mapping하는 것.
+* 다음은 mapping algorithm의 심플한 버전이다:
+	1. cost model이 input 값으로 algorithm에 들어감.
+		* cost model은 input/output tensor의 추정값과 그래프 안의 각 노드의 계산 시간을 가지고 있다.
+	2. cost model을 사용하여, node-placement 결정이 아래와 같이 이루어지도록 한다:  
+		a) source node에서 시작해서, 각 노드의 실행을 준비하는 것에 대해 실행가능한 device들을 고려한다.   
+		* "실행가능한" device는 주어진 operation을 구현한 kernel을 가지고 있다.
+		* 실행 준비가 된 노드는 dependecy가 끝난 노드들이다.
+		
+		b) 하나의 노드가 실행가능한 device 여러 개를 가진다면, 각 device에 따른 연산 시간을 검사한다.  
+		
+		* 이 검사는 operation의 실행 시간 뿐만 아니라 device간의 communication에 따른 비용도 구한다.
+
+		c) 가장 빠르게 operation을 끝낼 노드의 device를 선택한다.  
+		d) 모든 노드가 device에 할당될 때까지, a~c 단계를 반복한다.
+
+	3. 위임 후, 실제 실행은 결정을 위임하는 동안 만들어진 node-placement를 사용해서 돌아간다.
+* Section 4.3 에서 placement algorithm에 대해서 설명할 것.
+* placement algoritm의 개발은 진행 중인 프로세스.
 
 ### Cross-Device Communication
 

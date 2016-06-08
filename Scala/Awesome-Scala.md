@@ -15,6 +15,8 @@
 ## Course
 
 1. [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) by Martin Odersky
+2. [Functional Program Design in Scala](https://www.coursera.org/learn/progfun2/home/welcome) by Martin Odersky
+3. [Parallel programming](https://www.coursera.org/learn/parprog1/home/welcome) by Prof. Viktor Kuncak, Dr. Aleksandar Prokopec
 
 ## Video Lectures
 

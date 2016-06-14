@@ -18,7 +18,7 @@
 ## Course
 
 1. [Stanford University - Machine Learning](https://www.coursera.org/learn/machine-learning) by Andrew Ng. 
-
+2. [Stanford University - Probabilistic Graphical Models](https://www.coursera.org/course/pgm) by Daphne Koller
 
 ## Video Lectures
 

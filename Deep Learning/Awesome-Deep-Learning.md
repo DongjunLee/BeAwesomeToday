@@ -42,7 +42,11 @@ Neural Networks(AlexNet)](http://papers.nips.cc/paper/4824-imagenet-classificati
 12. [Conditional Random Fields as Recurrent Neural Networks](http://www.robots.ox.ac.uk/~szheng/papers/CRFasRNN.pdf) by S Zheng
 13. [TensorFlow(White paper):
 Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://download.tensorflow.org/paper/whitepaper2015.pdf) by Google, 2015 [Summary](https://github.com/samjabrahams/tensorflow-white-paper-notes)
+14. [End-To-End Memory Networks](http://arxiv.org/abs/1503.08895) by S Sukhbaatar, 2015
 
+## Slides
+
+1. [텐서플로우 설치도 했고 튜토리얼도 봤고 기초 예제도 짜봤다면](http://www.slideshare.net/carpedm20/ss-63116251) by 김태훈
 
 ## Frameworks
 

@@ -19,7 +19,8 @@
 2. [OXFORD University - Machine Learning](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Nando de Freitas
 3. [Udacity - Deep Learning](https://www.udacity.com/course/deep-learning--ud730) by Vincent Vanhoucke, Arpan Chakraborty
 4. [Toronto University - Neural Networks for Machine Learning](https://www.coursera.org/course/neuralnets) by Geoffrey Hinton
-
+5. [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html) by Richard Socher
+ 
 
 ## Video Lectures
 

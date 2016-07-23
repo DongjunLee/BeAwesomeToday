@@ -44,6 +44,7 @@ Neural Networks(AlexNet)](http://papers.nips.cc/paper/4824-imagenet-classificati
 13. [TensorFlow(White paper):
 Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://download.tensorflow.org/paper/whitepaper2015.pdf) by Google, 2015 [Summary](https://github.com/samjabrahams/tensorflow-white-paper-notes)
 14. [End-To-End Memory Networks](http://arxiv.org/abs/1503.08895) by S Sukhbaatar, 2015
+15. [Globally Normalized Transition-Based Neural Networks](https://arxiv.org/abs/1603.06042v1) by D Ando - SyntaxNet Paper
 
 ## Slides
 

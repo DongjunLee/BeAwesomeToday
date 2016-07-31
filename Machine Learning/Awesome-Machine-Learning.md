@@ -22,6 +22,9 @@
 
 ## Video Lectures
 
+1. [Jake VanderPlas - Machine Learning with Scikit-Learn (I) - PyCon 2015](https://www.youtube.com/watch?v=L7R4HUQ-eQ0)
+2. [Olivier Grisel - Machine Learning with Scikit-Learn (II) - PyCon 2015](https://www.youtube.com/watch?v=oGqGxvqA9-k)
+
 ## Papers
 
 1. [A Few Useful Things to Know about Machine Learning](https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf) by P Domingos
@@ -29,4 +32,3 @@
 ## Frameworks
 
 1. [Scikit-Learn](http://scikit-learn.org/stable/) 
-

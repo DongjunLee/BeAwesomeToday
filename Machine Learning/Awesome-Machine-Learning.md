@@ -24,6 +24,7 @@
 
 1. [Jake VanderPlas - Machine Learning with Scikit-Learn (I) - PyCon 2015](https://www.youtube.com/watch?v=L7R4HUQ-eQ0)
 2. [Olivier Grisel - Machine Learning with Scikit-Learn (II) - PyCon 2015](https://www.youtube.com/watch?v=oGqGxvqA9-k)
+3. [Zen of NumPy by Sungjoo Ha](https://www.youtube.com/watch?v=Dm2wkObQSas&feature=youtu.be)
 
 ## Papers
 

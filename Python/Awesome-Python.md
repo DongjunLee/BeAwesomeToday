@@ -22,3 +22,6 @@
 ## Frameworks
 
 
+## Podcast
+
+1. [Talk Python To Me](https://talkpython.fm/) by Michael Kennedy

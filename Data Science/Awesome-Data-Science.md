@@ -19,6 +19,11 @@
 
 ## Papers
 
+## Projects
+
+1. [DataScience Notebooks](https://github.com/DongjunLee/DataScience-Notebooks) - Collection of Python DatsScience Notebooks
+2. [BeHappy QS Proejct](https://github.com/DongjunLee/BeHappy-Django) - Quantified Self Project for Happiness, Efficiency, Activity
+
 ## Frameworks
 
 

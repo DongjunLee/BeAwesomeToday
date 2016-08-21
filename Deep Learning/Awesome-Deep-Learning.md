@@ -11,6 +11,7 @@
 
 ## Books
 
+1. [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow Yoshua Bengio and Aaron Courville, 2016
 
 ## Course
 

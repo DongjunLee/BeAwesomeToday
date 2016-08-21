@@ -16,6 +16,8 @@
 ## Video Lectures
 
 1. [Udemy - Learning Python for Data Analysis and Visualization](https://www.udemy.com/learning-python-for-data-analysis-and-visualization/learn/v4/overview) by Jose Portilla
+2. [PyCon 2015 Scikit-learn Tutorial](https://github.com/jakevdp/sklearn_pycon2015) by Jake VanderPlas
+3. [Parallel Machine Learning with scikit-learn and IPython](https://github.com/ogrisel/parallel_ml_tutorial) by Gael Varoquaux, Jake VanderPlas, livier Grisel
 
 ## Papers
 

@@ -12,7 +12,6 @@
 ## Books
 
 
-
 ## Course
 
 1. [Stanford University - CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/index.html) by Fei-Fei Li, Andrej Karpathy, Justin Johnson
@@ -45,6 +44,7 @@ Neural Networks(AlexNet)](http://papers.nips.cc/paper/4824-imagenet-classificati
 Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://download.tensorflow.org/paper/whitepaper2015.pdf) by Google, 2015 [Summary](https://github.com/samjabrahams/tensorflow-white-paper-notes)
 14. [End-To-End Memory Networks](http://arxiv.org/abs/1503.08895) by S Sukhbaatar, 2015
 15. [Globally Normalized Transition-Based Neural Networks](https://arxiv.org/abs/1603.06042v1) by D Ando - SyntaxNet Paper
+16. [Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) by T Mikolov, 2013
 
 ## Slides
 

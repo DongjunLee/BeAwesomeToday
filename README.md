@@ -29,6 +29,7 @@
 - [CSS](#css)
 - [Deep Learning](#deep-learning)
 - [Image Processing](#image-processing)
+- [Machine Learning](#machine-learning)
 - [Nature Language Processing](#nature-language-processing)
 - [Linux](#linux)
 - [Python](#python)
@@ -52,6 +53,9 @@
 
 #### Linux
 - [SSH Background Processing](Linux/ssh_background_processing.md)
+
+#### Machine Learning
+- [Gradient Boosting](Machine%20Learning/Gradient_Boosting.md)
 
 #### Nature Language Processing
 - [CoNLL](Nature%20Language%20Processing/CoNLL.md)

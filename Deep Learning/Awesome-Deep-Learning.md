@@ -8,6 +8,9 @@
 - [Video Lectures](#video-lectures)
 - [Papers](#papers)
 - [Frameworks](#frameworks)
+- [Libraries](#libraries)
+	- [Computer Vision](#computer-vision)
+	- [Nature Language Processing](#nature-language-processing)
 
 ## Books
 
@@ -57,3 +60,12 @@ Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://downlo
 1. [Torch7](http://torch.ch/) 
 2. [TensorFlow](https://www.tensorflow.org/)
 
+## Libraries
+
+### Computer Vision
+1. [SimpleCV](https://github.com/sightmachine/SimpleCV) - The Open Source Framework for Machine Vision
+
+### Nature Language Processing
+1. [polyglot](https://github.com/aboSamoor/polyglot) - Multilingual text (NLP) processing toolkit
+2. [SyntaxNet](https://github.com/tensorflow/models/tree/master/syntaxnet) - Neural Models of Syntax
+3. [heideltime](https://github.com/HeidelTime/heideltime) - A multilingual, cross-domain temporal tagger developed at the Database Systems Research Group at Heidelberg University

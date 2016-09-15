@@ -1,3 +1,5 @@
+![awesome](images/awesome.jpg)
+
 ## My Awesome List
 
  공부하고 있거나, 봤던 자료들을 모아 놓는 Awesome List입니다.
@@ -7,6 +9,7 @@
 - [AI](AI/Awesome-AI.md)
 - [Algorithm](Algorithm/Awesome-AIgorithm.md)
 - [AWS](AWS/Awesome-AWS.md)
+- [Code](Code/Awesome-Code.md)
 - [Data Science](Data%20Science/Awesome-Data-Science.md)
 - [Deep Learning](Deep%20Learning/Awesome-Deep-Learning.md)
 - [JavaScript](JavaScript/Awesome-JavaScript.md)
@@ -15,6 +18,8 @@
 - [Python](Python/Awesome-Python.md)
 - [Scala](Scala/Awesome-Scala.md)
 - [Spark](Spark/Awesome-Spark.md)
+
+![awesome](images/til.png)
 
 ## Today I Learned
 

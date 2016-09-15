@@ -1,4 +1,6 @@
-![awesome](images/awesome.jpg)
+<p align="center">
+  <img src="images/awesome.jpg">
+</p>
 
 ## My Awesome List
 
@@ -19,7 +21,9 @@
 - [Scala](Scala/Awesome-Scala.md)
 - [Spark](Spark/Awesome-Spark.md)
 
-![awesome](images/til.png)
+<p align="center">
+  <img src="images/til.png">
+</p>
 
 ## Today I Learned
 

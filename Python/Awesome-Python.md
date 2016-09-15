@@ -1,4 +1,4 @@
-# Awesome Python [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Python/Awesome-Python.md)
+# Awesome Python [![Awesome](../images/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 ## Table of Contents

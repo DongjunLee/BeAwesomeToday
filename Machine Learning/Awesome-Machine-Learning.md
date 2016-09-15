@@ -1,4 +1,4 @@
-# Awesome Machine Learning [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Machine%20Learning/Awesome-Machine-Learning.md)
+# Awesome Machine Learning [![Awesome](../images/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 ## Table of Contents

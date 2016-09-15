@@ -1,4 +1,4 @@
-# Awesome Kaggle # Awesome JavaScript [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Kaggle/Awesome-Kaggle.md)
+# Awesome Kaggle # Awesome JavaScript [![Awesome](../images/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 ## Table of Contents

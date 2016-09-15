@@ -1,4 +1,4 @@
-# Awesome AWS [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/AWS/Awesome-AWS.md)
+# Awesome AWS [![Awesome](../images/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 ## Table of Contents

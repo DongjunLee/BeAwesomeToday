@@ -1,4 +1,4 @@
-# Awesome Spark [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Spark/Awesome-Spark.md)
+# Awesome Spark [![Awesome](../images/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 ## Table of Contents

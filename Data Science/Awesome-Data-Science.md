@@ -1,4 +1,4 @@
-# Awesome Data Science [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Data%20Science/Awesome-Data-Science.md)
+# Awesome Data Science [![Awesome](../images/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 ## Table of Contents

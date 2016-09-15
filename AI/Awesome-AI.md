@@ -1,4 +1,4 @@
-# Awesome AI [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/AI/Awesome-AI.md)
+# Awesome AI [![Awesome](../images/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 ## Table of Contents

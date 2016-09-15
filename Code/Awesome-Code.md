@@ -1,4 +1,4 @@
-# Awesome Code [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Code/Awesome-Code.md)
+# Awesome Code [![Awesome](../images/awesome_badge.svg)](https://github.com/sindresorhus/awesome)
 
 
 ## Table of Contents

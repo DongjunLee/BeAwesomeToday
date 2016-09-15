@@ -26,6 +26,7 @@
 
 ### Categories
 
+- [AWS](#aws)
 - [Coding](#coding)
 - [CSS](#css)
 - [Deep Learning](#deep-learning)
@@ -37,6 +38,9 @@
 
 
 ### Contents
+
+#### AWS
+- [AWS Lambda와 API Gateway를 통한 Serverless Architecture 특집 (윤석찬)](AWS/Serverless_Architecture_seminar.md)
 
 #### Coding
 - [Iterator Pattern](Code/Iterator.md)

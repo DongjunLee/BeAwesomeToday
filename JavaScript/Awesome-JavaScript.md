@@ -1,4 +1,4 @@
-# Awesome JavaScript
+# Awesome JavaScript [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/JavaScript/Awesome-JavaScript.md)
 
 
 ## Table of Contents

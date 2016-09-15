@@ -1,4 +1,4 @@
-# Awesome Scala
+# Awesome Scala [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Scala/Awesome-Scala.md)
 
 
 ## Table of Contents

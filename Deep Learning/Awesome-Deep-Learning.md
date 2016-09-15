@@ -1,4 +1,4 @@
-# Awesome Deep Learning
+# Awesome Deep Learning [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Deep%20Learning/Awesome-Deep-Learning.md)
 
 
 ## Table of Contents

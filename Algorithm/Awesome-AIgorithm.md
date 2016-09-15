@@ -1,4 +1,4 @@
-# Awesome Algorithm
+# Awesome Algorithm [![Awesome](../images/awesome_badge.svg)](https://github.com/DongjunLee/TIL-MAL/blob/master/Algorithm/Awesome-AIgorithm.md)
 
 
 ## Table of Contents

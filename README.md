@@ -6,6 +6,7 @@
 
 - [AI](AI/Awesome-AI.md)
 - [Algorithm](Algorithm/Awesome-AIgorithm.md)
+- [AWS](AWS/Awesome-AWS.md)
 - [Data Science](Data%20Science/Awesome-Data-Science.md)
 - [Deep Learning](Deep%20Learning/Awesome-Deep-Learning.md)
 - [JavaScript](JavaScript/Awesome-JavaScript.md)

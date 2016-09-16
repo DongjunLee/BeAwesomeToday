@@ -1,4 +1,21 @@
 <p align="center">
+  <img src="images/Be_awesome_today.jpg">
+</p>
+
+<h1 align="center"> Be awesome today </h1>
+<p align="center"><sup><strong>My Awesome List & Today I Learned & Blogging Articles. <br/> <a href="http://humanbrain.in">Blog</a> | <a href="https://www.facebook.com/dongjun.lee.98284">Facebook</a></strong></sup></p>
+<p>  </p>
+
+
+## Category 
+
+- [My Awesome List](#my-awesome-list)
+- [Today I Learned](#today-i-learned)
+- [HumanBrain (blog)](#humanbrain)
+
+-------------------------------------------------
+
+<p align="center">
   <img src="images/awesome.jpg">
 </p>
 

@@ -1,11 +1,16 @@
 <p align="center">
-  <img src="images/Be_awesome_today.jpg">
+  <img src="images/Be_awesome_today.jpg" width=450>
 </p>
 
 <h1 align="center"> Be awesome today </h1>
-<p align="center"><sup><strong>My Awesome List & Today I Learned & Blogging Articles. <br/> <a href="http://humanbrain.in">Blog</a> | <a href="https://www.facebook.com/dongjun.lee.98284">Facebook</a></strong></sup></p>
-<p>  </p>
-
+<p align="center">
+  <sup><strong>
+    My Awesome List & Today I Learned & Blogging Articles. <br/> 
+    <a href="http://humanbrain.in">Blog</a>
+     | 
+    <a href="https://www.facebook.com/dongjun.lee.98284">Facebook</a>
+  </strong></sup>
+</p>
 
 ## Category 
 
@@ -16,7 +21,7 @@
 -------------------------------------------------
 
 <p align="center">
-  <img src="images/awesome.jpg">
+  <img src="images/awesome.jpg" width=300>
 </p>
 
 ## My Awesome List
@@ -41,7 +46,7 @@
 -------------------------------------------------
 
 <p align="center">
-  <img src="images/til.png">
+  <img src="images/til.png" width=300>
 </p>
 
 ## Today I Learned
@@ -102,7 +107,7 @@
 
 <p align="center">
   <a href="http://humanbrain.in/">
-    <img src="images/humanbrain_logo+text.png">
+    <img src="images/humanbrain_logo+text.png" width=300>
   </a>
 </p>
 

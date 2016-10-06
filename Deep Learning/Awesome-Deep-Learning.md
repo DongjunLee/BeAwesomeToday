@@ -28,7 +28,7 @@
 ## Video Lectures
 
 1. [Neural Network - Youtube Lecture](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) by Hugo Larochelle
-
+2. [Deep Learning for Natural Language Processing](https://www.youtube.com/watch?v=oGk1v1jQITw) by Richard Socher (Salesforce) Deep Learning School on September 24/25, 2016
 ## Papers
 
 1. [Multilayer feedforward networks are universal approximators](http://deeplearning.cs.cmu.edu/pdfs/Kornick_et_al.pdf) by K Hornik, 1989

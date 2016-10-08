@@ -23,12 +23,17 @@
 3. [Udacity - Deep Learning](https://www.udacity.com/course/deep-learning--ud730) by Vincent Vanhoucke, Arpan Chakraborty
 4. [Toronto University - Neural Networks for Machine Learning](https://www.coursera.org/course/neuralnets) by Geoffrey Hinton
 5. [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html) by Richard Socher
+6. [Deep Learning School](http://www.bayareadlschool.org/) September 24-25, 2016
+Stanford, CA
  
 
 ## Video Lectures
 
 1. [Neural Network - Youtube Lecture](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) by Hugo Larochelle
-2. [Deep Learning for Natural Language Processing](https://www.youtube.com/watch?v=oGk1v1jQITw) by Richard Socher (Salesforce) Deep Learning School on September 24/25, 2016
+2. [Deep Learning for Natural Language Processing](https://www.youtube.com/watch?v=oGk1v1jQITw) by Richard Socher (Salesforce)
+3. [Nuts and Bolts of Applying Deep Learning](https://youtu.be/F1ka6a13S9I) by Andrew Ng
+
+
 ## Papers
 
 1. [Multilayer feedforward networks are universal approximators](http://deeplearning.cs.cmu.edu/pdfs/Kornick_et_al.pdf) by K Hornik, 1989

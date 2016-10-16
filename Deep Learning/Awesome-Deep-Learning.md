@@ -55,6 +55,7 @@ Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://downlo
 15. [Globally Normalized Transition-Based Neural Networks](https://arxiv.org/abs/1603.06042v1) by D Ando - SyntaxNet Paper
 16. [Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) by T Mikolov, 2013
 17. [Building end-to-end dialogue systems using generative hierarchical neural network models](http://arxiv.org/abs/1507.04808) by Serban et al. AAAI 2016
+18. [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781) by T Mikolov, ‎2013
 
 ## Slides
 

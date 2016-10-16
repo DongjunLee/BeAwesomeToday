@@ -102,6 +102,7 @@
 
 #### Nature Language Processing
 - [CoNLL](Nature%20Language%20Processing/CoNLL.md)
+- [Word2Vec Summary](Nature%20Language%20Processing/Word2Vec_summary.md)
 
 #### Python
 - [Pickle Protocol](Python/Pickle_Protocols.md)

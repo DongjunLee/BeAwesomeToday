@@ -17,6 +17,8 @@
 
 ## Video Lectures
 
+1. [David Beazley - Modules and Packages: Live and Let Die! - PyCon 2015](https://www.youtube.com/watch?v=0oTh1CXRaQ0)
+
 ## Papers
 
 ## Frameworks

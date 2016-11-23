@@ -75,3 +75,4 @@ Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://downlo
 1. [polyglot](https://github.com/aboSamoor/polyglot) - Multilingual text (NLP) processing toolkit
 2. [SyntaxNet](https://github.com/tensorflow/models/tree/master/syntaxnet) - Neural Models of Syntax
 3. [heideltime](https://github.com/HeidelTime/heideltime) - A multilingual, cross-domain temporal tagger developed at the Database Systems Research Group at Heidelberg University
+4. [spaCy](https://github.com/explosion/spaCy) - Industrial-strength Natural Language Processing (NLP) with Python and Cython

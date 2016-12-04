@@ -56,6 +56,8 @@ Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://downlo
 16. [Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) by T Mikolov, 2013
 17. [Building end-to-end dialogue systems using generative hierarchical neural network models](http://arxiv.org/abs/1507.04808) by Serban et al. AAAI 2016
 18. [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781) by T Mikolov, ‎2013
+19. [Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks](https://arxiv.org/abs/1502.05698) by J Weston, 2015 
+20. [Human-level control through deep reinforcement learning](http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html#videos) by V Mnih, 2015
 
 ## Slides
 
@@ -75,3 +77,4 @@ Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://downlo
 1. [polyglot](https://github.com/aboSamoor/polyglot) - Multilingual text (NLP) processing toolkit
 2. [SyntaxNet](https://github.com/tensorflow/models/tree/master/syntaxnet) - Neural Models of Syntax
 3. [heideltime](https://github.com/HeidelTime/heideltime) - A multilingual, cross-domain temporal tagger developed at the Database Systems Research Group at Heidelberg University
+4. [spaCy](https://github.com/explosion/spaCy) - Industrial-strength Natural Language Processing (NLP) with Python and Cython

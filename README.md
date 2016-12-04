@@ -134,5 +134,5 @@ Personal Blog for Develop, Research, Tech, Projects, Life, Etc...
 	Tags: ![tags](https://img.shields.io/badge/Slack Bot--green.svg?style=social)
 - [샐러드를 먹는 스타트업을 위한 Salady Bot 개발기!](Blog/Salady_bot_for_startup.md)  
 	Tags: ![tags](https://img.shields.io/badge/Slack Bot--green.svg?style=social)
-- [Personal Assistant Kino Part 1.](Blog/Personal_Assistant_Kino_Part_1.md) (ing...)   
+- [Personal Assistant Kino Part 1.](Blog/Personal_Assistant_Kino_Part_1.md)
 	Tags: ![tags](https://img.shields.io/badge/Slack Bot--green.svg?style=social)![tags](https://img.shields.io/badge/Personal Assistant--green.svg?style=social)![tags](https://img.shields.io/badge/Quantified Self--green.svg?style=social)

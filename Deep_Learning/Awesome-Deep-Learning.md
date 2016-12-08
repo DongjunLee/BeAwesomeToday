@@ -58,6 +58,7 @@ Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://downlo
 18. [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781) by T Mikolov, ‎2013
 19. [Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks](https://arxiv.org/abs/1502.05698) by J Weston, 2015 
 20. [Human-level control through deep reinforcement learning](http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html#videos) by V Mnih, 2015
+21. [Google's Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation](https://arxiv.org/abs/1611.04558) by M Johnson, 2016
 
 ## Slides
 

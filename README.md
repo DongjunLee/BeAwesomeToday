@@ -136,3 +136,5 @@ Personal Blog for Develop, Research, Tech, Projects, Life, Etc...
 	Tags: ![tags](https://img.shields.io/badge/Slack Bot--green.svg?style=social)
 - [Personal Assistant Kino Part 1.](Blog/Personal_Assistant_Kino_Part_1.md)
 	Tags: ![tags](https://img.shields.io/badge/Slack Bot--green.svg?style=social)![tags](https://img.shields.io/badge/Personal Assistant--green.svg?style=social)![tags](https://img.shields.io/badge/Quantified Self--green.svg?style=social)
+- [Data and Machine Learning Newsletter.](Blog/data_and_ml_newsletter.md)
+	Tags: ![tags](https://img.shields.io/badge/Newsletter--green.svg?style=social)![tags](https://img.shields.io/badge/Data--green.svg?style=social)![tags](https://img.shields.io/badge/MachineLearning--green.svg?style=social)

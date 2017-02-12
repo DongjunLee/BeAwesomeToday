@@ -23,8 +23,8 @@
 3. [Udacity - Deep Learning](https://www.udacity.com/course/deep-learning--ud730) by Vincent Vanhoucke, Arpan Chakraborty
 4. [Toronto University - Neural Networks for Machine Learning](https://www.coursera.org/course/neuralnets) by Geoffrey Hinton
 5. [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html) by Richard Socher
-6. [Deep Learning School](http://www.bayareadlschool.org/) September 24-25, 2016
-Stanford, CA
+6. [Deep Learning School (bayareadlschool)](http://www.bayareadlschool.org/) September 24-25, 2016 Stanford, CA
+7. [Oxford Deep NLP 2017](https://github.com/oxford-cs-deepnlp-2017/lectures) by  Phil Blunsom and delivered in partnership with the DeepMind Natural Language Research Group.
  
 
 ## Video Lectures

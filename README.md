@@ -92,6 +92,9 @@
 - [Tensorboard-Basic](Deep%20Learning/Tensorboard-Basic.md)
 - [TensorFlow White Paper Summery(kor)](Deep%20Learning/Tensorflow-whitepaper-summary_kor.md) - ing..
 
+#### Java
+- [Exception을 다루는 방법](Java/handle_Exception.md)
+
 #### Image Processing
 - [Cartoon-ify](Image%20Processing/catoon-ify.md)
 

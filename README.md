@@ -36,6 +36,7 @@
 - [Code](Code/Awesome-Code.md)
 - [Data Science](Data%20Science/Awesome-Data-Science.md)
 - [Deep Learning](Deep%20Learning/Awesome-Deep-Learning.md)
+- [Java](Java/Awesome-Java.md)
 - [JavaScript](JavaScript/Awesome-JavaScript.md)
 - [Kaggle](Kaggle/Awesome-Kaggle.md)
 - [Machine Learning](Machine%20Learning/Awesome-Machine-Learning.md)

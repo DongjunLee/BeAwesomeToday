@@ -34,12 +34,12 @@
 - [Algorithm](Algorithm/Awesome-AIgorithm.md)
 - [AWS](AWS/Awesome-AWS.md)
 - [Code](Code/Awesome-Code.md)
-- [Data Science](Data%20Science/Awesome-Data-Science.md)
-- [Deep Learning](Deep%20Learning/Awesome-Deep-Learning.md)
+- [Data Science](Data_Science/Awesome-Data-Science.md)
+- [Deep Learning](Deep_Learning/Awesome-Deep-Learning.md)
 - [Java](Java/Awesome-Java.md)
 - [JavaScript](JavaScript/Awesome-JavaScript.md)
 - [Kaggle](Kaggle/Awesome-Kaggle.md)
-- [Machine Learning](Machine%20Learning/Awesome-Machine-Learning.md)
+- [Machine Learning](Machine_Learning/Awesome-Machine-Learning.md)
 - [Python](Python/Awesome-Python.md)
 - [Scala](Scala/Awesome-Scala.md)
 - [Spark](Spark/Awesome-Spark.md)
@@ -79,7 +79,7 @@
 - [API Gateway request 설정](AWS/Request_object_API_Gateway.md)
 
 #### Chat Bot
-- [Slaker와 Asyncio](Chat%20Bot/slacker_and_asyncio.md)
+- [Slaker와 Asyncio](Chat_Bot/slacker_and_asyncio.md)
 
 #### Coding
 - [Iterator Pattern](Code/Iterator.md)
@@ -89,24 +89,25 @@
 - [CSS Units, 길이 단위](CSS/CSS_Units.md)
 
 #### Deep Learning
-- [Tensorboard-Basic](Deep%20Learning/Tensorboard-Basic.md)
-- [TensorFlow White Paper Summery(kor)](Deep%20Learning/Tensorflow-whitepaper-summary_kor.md) - ing..
+- [Tensorboard-Basic](Deep_Learning/Tensorboard-Basic.md)
+- [TensorFlow White Paper Summery(kor)](Deep_Learning/Tensorflow-whitepaper-summary_kor.md)
+- [Learning to protect communications with adversarial neural cryptography](Deep_Learning/Learning_to_protect_communications_with_adversarial_neural_cryptography.md)
 
 #### Java
 - [Exception을 다루는 방법](Java/handle_Exception.md)
 
 #### Image Processing
-- [Cartoon-ify](Image%20Processing/catoon-ify.md)
+- [Cartoon-ify](Image_Processing/catoon-ify.md)
 
 #### Linux
 - [SSH Background Processing](Linux/ssh_background_processing.md)
 
 #### Machine Learning
-- [Gradient Boosting](Machine%20Learning/Gradient_Boosting.md)
+- [Gradient Boosting](Machine_Learning/Gradient_Boosting.md)
 
 #### Nature Language Processing
-- [CoNLL](Nature%20Language%20Processing/CoNLL.md)
-- [Word2Vec Summary](Nature%20Language%20Processing/Word2Vec_summary.md)
+- [CoNLL](Nature_Language_Processing/CoNLL.md)
+- [Word2Vec Summary](Nature_Language_Processing/Word2Vec_summary.md)
 
 #### Python
 - [Pickle Protocol](Python/Pickle_Protocols.md)

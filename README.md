@@ -77,6 +77,7 @@
 #### AWS
 - [AWS Lambda와 API Gateway를 통한 Serverless Architecture 특집 (윤석찬)](AWS/Serverless_Architecture_seminar.md)
 - [API Gateway request 설정](AWS/Request_object_API_Gateway.md)
+- [AWS Lambda Tips](AWS/Lambda_Tips.md)
 
 #### Chat Bot
 - [Slaker와 Asyncio](Chat_Bot/slacker_and_asyncio.md)

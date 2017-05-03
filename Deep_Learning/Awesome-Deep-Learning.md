@@ -6,7 +6,6 @@
 - [Books](#books)
 - [Course](#course)
 - [Video Lectures](#video-lectures)
-- [Papers](#papers)
 - [Frameworks](#frameworks)
 - [Libraries](#libraries)
 	- [Computer Vision](#computer-vision)
@@ -34,32 +33,6 @@
 3. [Nuts and Bolts of Applying Deep Learning](https://youtu.be/F1ka6a13S9I) by Andrew Ng
 
 
-## Papers
-
-1. [Multilayer feedforward networks are universal approximators](http://deeplearning.cs.cmu.edu/pdfs/Kornick_et_al.pdf) by K Hornik, 1989
-2. [On the number of linear regions of deep neural networks](http://arxiv.org/abs/1402.1869) by G Montúfar, 2014
-3. [Understanding the difficulty of training deep feedforward neural networks](http://jmlr.org/proceedings/papers/v9/glorot10a/glorot10a.pdf) by X Glorot, 2010
-4. [A fast learning algorithm for deep belief nets](https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf) by G Hinton, 2006
-5. [Greedy layer-wise unsupervised pre-training](https://papers.nips.cc/paper/3048-greedy-layer-wise-training-of-deep-networks.pdf) by Y Bengio, 2007
-6. [ImageNet Classification with Deep Convolutional
-Neural Networks(AlexNet)](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by A Krizhevsky, 2012
-7. [OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks](http://arxiv.org/abs/1312.6229) by P Sermanet, 2013
-8. [Going Deeper with Convolutions(GoogLeNet)](http://arxiv.org/abs/1409.4842) by C Szegedy, 2014
-9. [Deep Residual Learning for Image Recognition](http://arxiv.org/abs/1512.03385) by K He, 2015
-10. [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](http://arxiv.org/abs/1502.03167) by S Ioffe, 2015
-11. [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](http://arxiv.org/abs/1511.06434) by A Radford, 2016
-12. [Conditional Random Fields as Recurrent Neural Networks](http://www.robots.ox.ac.uk/~szheng/papers/CRFasRNN.pdf) by S Zheng
-13. [TensorFlow(White paper):
-Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://download.tensorflow.org/paper/whitepaper2015.pdf) by Google, 2015 [Summary](https://github.com/samjabrahams/tensorflow-white-paper-notes)
-14. [End-To-End Memory Networks](http://arxiv.org/abs/1503.08895) by S Sukhbaatar, 2015
-15. [Globally Normalized Transition-Based Neural Networks](https://arxiv.org/abs/1603.06042v1) by D Ando - SyntaxNet Paper
-16. [Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) by T Mikolov, 2013
-17. [Building end-to-end dialogue systems using generative hierarchical neural network models](http://arxiv.org/abs/1507.04808) by Serban et al. AAAI 2016
-18. [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781) by T Mikolov, ‎2013
-19. [Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks](https://arxiv.org/abs/1502.05698) by J Weston, 2015 
-20. [Human-level control through deep reinforcement learning](http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html#videos) by V Mnih, 2015
-21. [Google's Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation](https://arxiv.org/abs/1611.04558) by M Johnson, 2016
-
 ## Slides
 
 1. [텐서플로우 설치도 했고 튜토리얼도 봤고 기초 예제도 짜봤다면](http://www.slideshare.net/carpedm20/ss-63116251) by 김태훈
@@ -68,6 +41,7 @@ Large-Scale Machine Learning on Heterogeneous Distributed Systems](http://downlo
 
 1. [Torch7](http://torch.ch/) 
 2. [TensorFlow](https://www.tensorflow.org/)
+3. [Caffe2](https://caffe2.ai/)
 
 ## Libraries
 

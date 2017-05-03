@@ -31,11 +31,19 @@
 1. [Neural Network - Youtube Lecture](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) by Hugo Larochelle
 2. [Deep Learning for Natural Language Processing](https://www.youtube.com/watch?v=oGk1v1jQITw) by Richard Socher (Salesforce)
 3. [Nuts and Bolts of Applying Deep Learning](https://youtu.be/F1ka6a13S9I) by Andrew Ng
+4. [Toward Efficient Deep Neural Network Deployment: Deep Compression and EIE](https://www.youtube.com/watch?v=CrDRr2fxbsg&index=2&list=PLCEhhtyU7LGfZZB7Gs4p0OEJWdfk2ZMMH) by Song Han  
+5. [Failures of Deep Learning](https://www.youtube.com/watch?v=jWVZnkTfB3c) by Shai Shalev-Shwartz
+6. [Two Minute Papers](https://www.youtube.com/user/keeroyz/featured) Awesome Research For Everyone! - Two Minute Papers Channel
+7. [테리의 딥러닝 토크](https://www.youtube.com/playlist?list=PL0oFI08O71gKEXITQ7OG2SCCXkrtid7Fq) by Terry TaeWoong Um
+8. [모두를 위한 딥러닝 강좌 시즌 1](https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm) by Sung Kim
+9. [모두를 위한 RL강좌](https://www.youtube.com/playlist?list=PLlMkM4tgfjnKsCWav-Z2F-MMFRx-2gMGG) by Sung Kim
+10. [PR12 딥러닝 논문읽기 모임](https://www.youtube.com/playlist?list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS)
 
 
 ## Slides
 
 1. [텐서플로우 설치도 했고 튜토리얼도 봤고 기초 예제도 짜봤다면](http://www.slideshare.net/carpedm20/ss-63116251) by 김태훈
+2. [Toward Best Practices of TensorFlow Code Patterns](https://wookayin.github.io/TensorFlowKR-2017-talk-bestpractice/ko/) by Jongwook Choi and Beomjun Shin
 
 ## Frameworks
 

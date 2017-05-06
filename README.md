@@ -2,7 +2,6 @@
   <img src="images/be_awesome_today_logo.png" width=450>
 </p>
 
-<h1 align="center"> Be awesome today </h1>
 <p align="center">
   <sup><strong>
     My Awesome List & Today I Learned & Blogging Articles. <br/> 

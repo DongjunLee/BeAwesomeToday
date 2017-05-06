@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/Be_awesome_today.jpg" width=450>
+  <img src="images/be_awesome_today_logo.png" width=450>
 </p>
 
 <h1 align="center"> Be awesome today </h1>

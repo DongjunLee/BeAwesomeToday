@@ -113,8 +113,9 @@
 #### Python
 - [Pickle Protocol](Python/Pickle_Protocols.md)
 - [PEP8_Kor](Python/PEP_8/README.md)
-- [Effective_Python_Notes](Python/Effective_Python_Summary/README.md)
+- [Effective Python Notes](Python/Effective_Python_Summary/README.md)
 - [Set up and use a virtual python environment](Python/set_up_virtualenvwrapper.md)
+- [Data Structures in Python 3](Python/Data_structure.md)
 
 ##### Paper
 - **Deep Learning Papers** forked from [Deep-Learning-Papers-Reading-Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)

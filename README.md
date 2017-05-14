@@ -93,8 +93,7 @@
 
 - **Deep Learning Papers** forked from [Deep-Learning-Papers-Reading-Roadmap](https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap)
 	- [Survey - Deep Learning](Deep_Learning/Deep_Learning_Papers/Servey-Deep_learning.md) Nature 521.7553 (2015) by LeCun, Yann, Yoshua Bengio, and Geoffrey Hinton
-	- [Model - Batch normalization](Deep_Learning/Deep_Learning_Papers/Servey-Deep_learning.md) arXiv preprint arXiv:1502.03167 (2015) by Ioffe, Sergey, and Christian Szegedy.
-
+	- [Model - Batch normalization](Deep_Learning/Deep_Learning_Papers/Model-Batch_normalization.md) arXiv preprint arXiv:1502.03167 (2015) by Ioffe, Sergey, and Christian Szegedy.
 - [Tensorboard-Basic](Deep_Learning/Tensorboard-Basic.md)
 - [TensorFlow White Paper Summery(kor)](Deep_Learning/Tensorflow-whitepaper-summary_kor.md)
 - [Learning to protect communications with adversarial neural cryptography](Deep_Learning/Learning_to_protect_communications_with_adversarial_neural_cryptography.md)

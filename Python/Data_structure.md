@@ -39,7 +39,23 @@ class MaleStudent(Student):
 MaleStudent(name='Tommy Johnson', address='Main street', age=22, sex='M')  # note that sex defaults to 'M'
 ```
 
-### 2. types.MappingProxyType
+### 2. typing.Optional
+
+- added in Python 3.6
+- Optional Type
+- Optional[X] is equivalent to Union[X, None].
+	- Union: Union type; Union[X, Y] means either X or Y.
+	- example
+	
+	```python 
+	Union[Union[int, str], float] == Union[int, str, float]
+	Union[int] == int  # The constructor actually returns int
+	Union[int, str, int] == Union[int, str]
+	Union[int, str] == Union[str, int]
+	Union[int, object] == object
+	```
+
+### 3. types.MappingProxyType
 
 - added in Python 3.3
 - be used as a read-only dict
@@ -65,7 +81,7 @@ TypeError: 'mappingproxy' object does not support item assignment
 mappingproxy({'a': 3, 'b': 2, 'c': 4})
 ```
 
-### 3. types.SimpleNamespace
+### 4. types.SimpleNamespace
 
 - added in Python 3.3
 - provides attribute access to its namespace as well as a meaningful repr.
@@ -99,7 +115,7 @@ DataBag(a=1, b=2)
 (b, 2)
 ```
 
-### 4. Enum
+### 5. Enum
 
 - new in Python 3.4
 - enumeration is a set of symbolic names
@@ -144,7 +160,7 @@ HairColor.black
 <Color.WHITE: 7>
 ```
 
-### 5. Counter
+### 6. Counter
 
 - dict subclass for counting hashable objects
 - Elements are counted from an iterable or initialized from another mapping (or counter):
@@ -180,7 +196,7 @@ Counter({'a': 1, 'b': 1})
 Counter({'a': 3, 'b': 2})
 ```
 
-### 6. OrderedDict
+### 7. OrderedDict
 
 - added in Python 3.1
 - dict subclass, supporting the usual dict methods.

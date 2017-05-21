@@ -120,6 +120,7 @@
 - [Effective Python Notes](Python/Effective_Python_Summary/README.md)
 - [Set up and use a virtual python environment](Python/set_up_virtualenvwrapper.md)
 - [Data Structures in Python 3](Python/Data_structure.md)
+- [Error Handling in Python 3.6](Python/Error_Handling_in_Python3.6.md)
 
 
 -------------------------------------------------

@@ -6,9 +6,7 @@
   <sup><strong>
     My Awesome List & Today I Learned & Blogging Articles. <br/> 
     <a href="http://humanbrain.in">Blog</a>
-     | 
-    <a href="https://www.facebook.com/dongjun.lee.98284">Facebook</a>
-  </strong></sup>
+  </sup>
 </p>
 
 ## Category 
@@ -122,6 +120,7 @@
 - [Data Structures in Python 3](Python/Data_structure.md)
 - [Error Handling in Python](Python/Error_Handling_in_Python.md)
 - [Instance, Class, and Static Methods](Python/Instance_Class_and_Static_Methods.md)
+- [The Fun of Reinvention](Python/The_Fun_of_Reinvention.md)
 
 
 -------------------------------------------------

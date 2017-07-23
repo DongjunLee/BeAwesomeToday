@@ -220,12 +220,31 @@ OrderedDict([('pear', 1), ('orange', 2), ('banana', 3), ('apple', 4)])
 OrderedDict([('pear', 1), ('apple', 4), ('orange', 2), ('banana', 3)])
 ```
 
+### 8. ChainMap
+
+- groups multiple dicts or other mappings together to create a single, updateable view.
+- Lookups search the underlying mappings successively until a key is found. In contrast, writes, updates, and deletions only operate on the first mapping.
+- example
+
+```python
+>>> c = ChainMap({}, {'x': 0, 'y': 0})
+>>> c['x']
+0
+>>> c['a'] = 42
+>>> c
+ChainMap({'a': 42}, {'x': 0, 'y': 0})
+>>> c.maps[0]
+{'a': 42}
+>>> c['y']
+0
+```
+
 
 ## Reference
 
 - [New interesting data structures in Python 3](https://github.com/topper-123/Articles/blob/master/New-interesting-data-types-in-Python3.rst)
-- [Enum Python 3.6.1 Documentation](https://docs.python.org/3/library/enum.html)
-- [collections Python 3.6.1 Documetation](https://docs.python.org/3/library/collections.html#collections.Counter)
+- [Enum Python 3.6.2 Documentation](https://docs.python.org/3/library/enum.html)
+- [collections Python 3.6.2 Documetation](https://docs.python.org/3/library/collections.html#collections.Counter)
 
 
 

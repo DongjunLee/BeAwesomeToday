@@ -102,6 +102,7 @@
 
 #### Java
 - [Exception을 다루는 방법](Java/handle_Exception.md)
+- [Java Static Analysis + Jenkins](Java/Jenkis_Static_Analysis.md)
 
 #### Image Processing
 - [Cartoon-ify](Image_Processing/catoon-ify.md)

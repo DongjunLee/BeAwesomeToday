@@ -100,6 +100,7 @@
 - [Tensorboard-Basic](Deep_Learning/Tensorboard-Basic.md)
 - [TensorFlow White Paper Summery(kor)](Deep_Learning/Tensorflow-whitepaper-summary_kor.md)
 - [Learning to protect communications with adversarial neural cryptography](Deep_Learning/Learning_to_protect_communications_with_adversarial_neural_cryptography.md)
+- [Deep Learning Tricks & Tips](Deep_Learning/DL_Tricks_and_Tips.md)
 
 #### Git
 - [Git Hooks](Git/git-hooks.md)
@@ -129,7 +130,7 @@
 - [Data Structures in Python 3](Python/Data_structure.md)
 - [Error Handling in Python](Python/Error_Handling_in_Python.md)
 - [Instance, Class, and Static Methods](Python/Instance_Class_and_Static_Methods.md)
-- [The Fun of Reinvention](Python/The_Fun_of_Reinvention.md)
+- [The Fun of Reinvention](Python/The_Fun_of_reinvention.md)
 
 
 -------------------------------------------------

@@ -131,6 +131,7 @@
 - [Error Handling in Python](Python/Error_Handling_in_Python.md)
 - [Instance, Class, and Static Methods](Python/Instance_Class_and_Static_Methods.md)
 - [The Fun of Reinvention](Python/The_Fun_of_reinvention.md)
+- [Python API Checklist](Python/Python_API_and_Library_CheckList.md)
 
 
 -------------------------------------------------

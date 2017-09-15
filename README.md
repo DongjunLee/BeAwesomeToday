@@ -101,6 +101,7 @@
 - [TensorFlow White Paper Summery(kor)](Deep_Learning/Tensorflow-whitepaper-summary_kor.md)
 - [Learning to protect communications with adversarial neural cryptography](Deep_Learning/Learning_to_protect_communications_with_adversarial_neural_cryptography.md)
 - [Deep Learning Tricks & Tips](Deep_Learning/DL_Tricks_and_Tips.md)
+- [Higher-Level APIs in TensorFlow](Deep_Learning/TensorFlow-High-API.md)
 
 #### Git
 - [Git Hooks](Git/git-hooks.md)

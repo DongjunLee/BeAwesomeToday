@@ -1,5 +1,9 @@
 # Personal Assistant Kino Part 1.
 
+Kino 프로젝트는 QS를 통해서 자신에 대해서 알고, 불필요한 일들을 자동화시키고 삶의 질을 증진시키기 위한 프로젝트 입니다.
+
+![images](../images/quantified_self_logo_2x.gif)
+
 ## Introduction
 
  최근에 Bot에 대한 글도 많이 읽고.. [조그만 미니 프로젝트](http://humanbrain.in/2016/08/21/slack_bot_for_salady/)로 Bot도 개발해보면서, 그 동안 마음 속에 계속해서 자리잡고 있던! 제가 가장 만들어보고 싶던 개인 프로젝트를 진행할 때가 되었구나 생각이 되었습니다. 
@@ -20,6 +24,7 @@
 2. [RescueTime](https://www.rescuetime.com/): 생산성을 관리해주는 툴로서, PC에서 사용한 앱들의 시간을 기록해서 보여줍니다.
 3. [Pebble](https://www.pebble.com/): 걸음걸이와 수면시간을 Tracking. Data는 스마트워치 안에 기록되는 시스템으로 보이나.. 간편하게 사용하기에는 어려워 보이네요.
 4. [Todoist](https://ko.todoist.com/): 온라인 작업 관리 및 할일 목록 관리 앱 입니다. 스마트폰, PC, 웹 등.. 다양한 플랫폼을 제공하고 있어서 편하게 사용하고 있습니다.
+5. 그 외 수면 시간, 행복도, 집중도, 생산성 데이터를 수집하는 App (없을 경우 Bot에 붙여서 만들기)
 
 ## Bot Platform
  
@@ -29,13 +34,16 @@
  그렇게 알아보던 중, 제가 사용하고 있는 개인용 Slack이 눈에 들어왔습니다. [IFTTT](https://www.ifttt.com/)를 연동하여 여러 서비스들에 대한 정보를 Slack에 기록하고 있었고, 개인적인 메모를 하거나 정보를 볼 때 사용하고 있었습니다. 또한 Slack은 굉장히 간단하게 BOT_TOKEN 만 있어도 통신을 주고 받을 수 있고, Slack으로 [Salady Bot]((http://humanbrain.in/2016/08/21/slack_bot_for_salady/))을 만들면서 이미 개발경험을 가지고 있기에 더욱 적합하다고 생각을 했습니다.
  
  <p align="center">
-    <img src="https://forger.typo3.org/images/slack.svg" width=400>
+    <img src="https://forger.typo3.org/images/slack.svg" width=400> <br/>
+    출처 : Slack
  </p>
  
 ### Slack의 선정이유
 1. 개인용으로 만들어서 운영하는 Slack이 있다. (개인용으로 사용가능)
 2. 다른 App들은 Server로 구성하고, Webhook 설정들의 작업들이 필요하지만, Slack은 Token만 있으면 통신이 가능.
 3. 이미 Slack Bot을 개발해본 경험이 있다.
+4. Team용으로 이미 친숙하게 사용하고 있었다.
+5. 외부 서비스들을 Integration 해서 사용하기 쉽다.
 
 ## Chat Bot
 
@@ -49,21 +57,28 @@
  2. **Smart Chatbot**: 이 단계부터는 NLP가 적용된 단계입니다. 각종 Bot framework에서 제공하는 기능처럼, intent, named entity, sentiment, domain 등을 추출하여 그에 따른 응답을 처리합니다. 여기서는 Dialog manager가 대화를 파악하고 관리하며, 자연스러운 응답을 생성하는 NLG까지 포함됩니다.
  3. **A.I Chatbot**: 이 단계의 Bot은 강 인공지능을 의미합니다. 아직은 어떤 모습으로 나타날지 상상할 수 없는 모습이기도 합니다. Deep Learning + Reinforce Learning 가 합쳐지면서 조금씩 조금씩 이 단계를 향해 나아가고 있다고 생각합니다.
 
- 여기서 제가 만들고자 하는 Bot의 목표는 우선.. Smart Chabot 입니다. 하지만 문제는 Data가 정말 많이 필요하다는 문제가 있습니다. 그래서 보통 Basic Chatbot부터 시작을 하여 Data를 모읍니다. 그리고 일정량의 Data가 모인다음에 기존의 로직을 학습을 한 Neural Network로 교체하게 됩니다. 저도 이와 같은 장기적은 계획을 세우고.. 단기적인 목표를 세우면서.. Basic Chatbot의 중요한 점을 깨달았습니다. 처음에는 복잡한 말을 이해하는 것이 중요한 것이 아닌 Chat bot으로서 다양한 기능을 제공할 수 있어야 한다는 것이였습니다. 그와 더불어서 Bot이 나에게 먼저 말을 걸 수 있도록 상황을 인지하는 프로세스가 추가되도록 개발을 해야겠구나 하는 것입니다.
+ 여기서 제가 만들고자 하는 Bot의 목표는 우선.. **Smart Chabot** 입니다. 하지만 문제는 Data가 어느정도 필요하다는 문제가 있습니다. 
+ 
+ 그래서 보통 Basic Chatbot부터 시작을 하여 Data를 모으는 것이 일반적 입니다. 그리고 일정량의 Data가 모인 다음에 기존의 로직을 바탕으로 학습을 하는 Imitation Learning을 통해 자동화를 시킬 수 있습니다. 그 후로 더 데이터를 모으고, 기준이 생긴다면 그 것에 맞춰서 조금 더 똑똑하게 행동하도록 만들 수 있을 것 입니다.
+ 
+ 저는 이와 같은 장기프로젝트에 대한 계획을 세우면서, 이 과정에서 필요한 기능들이 무엇인지 떠올랐습니다.  
+ 우선, 개인용 봇으로 사용하는데, 괜히 어렵게 말을 알아들을 필요가 없다는 것 입니다. 최소한의 자연어 처리를 하고 간단한 키워드 매칭을 통해서 의도를 파악하는 것.
+ 다음으로 새로운 기능들을 다 만들 필요없이 기존의 서비스들을 사용해서 기능들을 만들 것.
+ 마지막으로 나에게 필요한 기능을 내가 지정한 시간에 실행할 수 있는 것.
+ 
+ 그렇게 여러가지 서비스들을 Kino의 Skill 들로 등록해서 사용하고, 간단한 자연어 처리로 간단하게 Job을 등록해서 내가 원하는 시간에 그 일을 하도록 만들었습니다 (예, 2시간 마다 날씨 알려줘, 오전 8시에 하루 브리핑 등...) 아래는 지금까지 Kino의 중간 결과물 입니다.
+ 
+ 다음에는 Skill과 Scheduling 에 대해서 조금 더 세부적인 내용들을 다뤄보겠습니다.
  
 ## Kino
  
  그렇게 만들기 시작한 저만의 개인 비서 Kino. 아래는 중간 결과물을 입니다.
  
- ![guide](../images/kino_intro_and_guide.png)
+ ![guide](../images/ko/intro_and_guide.png)
  인트로 & 가이드
  
- ![functions](../images/kino_functions.png)
- 사용가능한 기능들.
- 
- ![example1](../images/kino_briefing.png)
- ![example2](../images/kino_weather.png)
- 기능 예시.
+ ![functions](../images/ko/kino-functions.jpeg)
+ 사용할 수 있는 Skill들
  
   
  

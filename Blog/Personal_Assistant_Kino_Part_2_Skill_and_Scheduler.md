@@ -1,4 +1,4 @@
-# Personal Assistant Kino Part 2 - Skill & Scheduling.
+# Personal Assistant Kino Part 2 - Skill & Scheduler.
 
 Kino 프로젝트는 QS를 통해서 자신에 대해서 알고, 불필요한 일들을 자동화시키고 삶의 질을 증진시키기 위한 프로젝트 입니다.
 
@@ -6,19 +6,22 @@ Kino 프로젝트는 QS를 통해서 자신에 대해서 알고, 불필요한 �
 
 출처 : http://quantifiedself.com/
 
-## Skill & Scheduling
+## Skill & Scheduler
 
 [Kino에 대해서 간단히 소개를 했던 1편]()에 이어서, 내부의 핵심이 되는 Skill과 Scheduler 기능에 대해서 이야기하고자 합니다. 이 두가지 기능은 다음과 같은 생각들을 하다가 나오게 되었습니다.
 
 어떻게 하면 나에게 맞는 똑똑한 개인용 봇을 만들 수 있을까?
 
-1. IFTTT 같은 서비스 처럼 내가 사용하는 서비스들을 자유롭게 Customizing 해서 사용할 수 있도록 해야겠다.  
+1. [IFTTT](https://ifttt.com) 같은 서비스 처럼 내가 사용하는 서비스들을 자유롭게 Customizing 해서 사용한다면 좋겠다.
 2. 그렇다면 이렇게 만든 함수들을 Skill로 명명하고 관리해야겠다.
-3. 내가 원하는 시간에 이 Skill이 돌아가도록 하면?
+3. 마지막으로 내가 원하는 시간에 이 Skill이 돌아가도록 할 수 있다면?
 
-이 Skill과 Scheduler 를 조금 더 세부적으로 보면 이렇습니다. 외부 서비스의 API를 wrapping해서 custom한 function을 만든다. 그리고 crontab 기능을 이용해서 정해진 시간에 그 기능이 돌아가도록 한다.
+
+이 Skill과 Scheduler 를 조금 더 세부적으로 보면 이렇습니다.   
+외부 서비스의 API를 wrapping해서 custom한 function을 만든다. 그리고 crontab 기능을 이용해서 정해진 시간에 그 기능이 돌아가도록 한다.
 
 이렇게 2가지 기능에 대한 세부적인 내용들이 나오고, 어떻게 구현하는 것이 좋을지 간단한 설계 후 작업을 진행하였습니다. 저는 이 kino 프로젝트를 진행하면서 한가지 중요하게 생각했던 부분이 있습니다. '**Python 3.6**을 이용해서 새롭게 나온 Feature들을 최대한 활용하자.' 그래서 구현에 대한 설명에도 새로운 Feature들이 포함되어 있습니다. 이 글을 읽으시는 독자 분들이 Python 3.6의 매력을 느낀다면 좋겠습니다.
+
 
 ### Skill
 
@@ -32,10 +35,10 @@ Skill은 계속해서 추가될 수 있기 때문에, **프로젝트 구조**에
 	- ....
 ```
 
-다음으로는 어떻게 Skill을 사용할 것 인가 입니다.
-저는 처음부터 간단한 Keyword 매칭 만으로 Skill 을 사용할 생각이였으나.. 모든 Keyword 들을 다 입력해 놓는 것은 좋은 방법이 아니였습니다. Keyword 들을 입력하는 것도 큰 수고가 필요하기 때문에.. 조금 더 간결하게 사용할 수 있는 방법을 생각해보았습니다. 그래서 추가된 것이 **disintegrator** 입니다.
+다음으로는 '어떻게 Skill을 사용할 것 인가' 입니다.  
+저는 처음에 간단한 Keyword 매칭 만으로 Skill 을 사용할 생각이였으나.. 모든 Keyword 들을 다 입력해 놓는 것은 좋은 방법이 아니였습니다. Keyword 들을 입력하는 것도 큰 수고가 필요하기 때문에, 조금 더 간결하게 사용할 수 있는 방법을 생각해보았습니다. 그래서 추가된 것이 **disintegrator** 입니다.
 
-여기서 간단한 NLP 를 사용합니다. 한글의 경우 [konlpy]()가 형태소 분석이나 품사태깅의 기능을 지원합니다. konlpy를 이용해서 하려는 작업은 간단합니다. 문장을 그대로 받아서 Simple하게 만드는 것.
+여기서 간단한 NLP 를 사용합니다. 한글의 경우 [konlpy](https://github.com/konlpy/konlpy)가 형태소 분석이나 품사태깅의 기능을 지원합니다. konlpy를 이용해서 하려는 작업은 간단합니다. 문장을 그대로 받아서 Simple하게 만드는 것.
 
 ```python
 class KorDisintegrator:
@@ -93,7 +96,7 @@ def forecast(self, timely: str="current"):
 
 ```__annotations__```를 통해서 필요한 param 정보를 얻어올 수 있습니다. 마찬가지로 __doc__을 이용하면 아래 적혀있는 keyword, description, icon에 대해서 얻어올 수 있습니다. 그래서 이 정보들을 모아서 skills.json 파일을 만들면 Skill 등록은 끝이나게 됩니다.
 
-다음으로는 Python에서 제공하는 ```any```, ```all```을 사용해서 키워드 매칭 코드를 작성하고,
+다음으로는 Python에서 제공하는 ```any()```, ```all()```을 사용해서 키워드 매칭 코드를 작성하고,
 ```Regex(정규식)```을 통해서 Skill의 Param을 전달하는 코드를 작성하면!  
 아래와 같이 날씨 스킬을 손쉽게 사용할 수 있습니다. 참 쉽죠?
 
@@ -115,11 +118,11 @@ schedule.every().monday.do(job)
 schedule.every().wednesday.at("13:15").do(job)
 ```
 
-schedule Package를 이용하면 제가 작업하면 되는 부분은 
+schedule Package를 이용하면 제가 작업하면 되는 부분은
 
 1. 백그라운드에서 스케쥴링을 돌린다.
 	- **Threading** 을 사용.
-2. 동적으로 스케쥴링을 돌리도록 하는 것. 
+2. 동적으로 스케쥴링을 돌리도록 하는 것.
 	- Python에서 제공하는 built-in funciton인 **getattr**을 사용
 
 이 부분에 대한 자세한 코드를 알고 싶으시다면, [Github 저장소](https://github.com/DongjunLee/kino-bot)를 참고해주세요! 다음으로 이 함수대로만 사용하는 것은 조금 제한적인 부분들이 있어서 아래와 같은 조건을 추가하게 됩니다.
@@ -136,6 +139,7 @@ schedule Package를 이용하면 제가 작업하면 되는 부분은
 ![images](https://github.com/DongjunLee/BeAwesomeToday/blob/master/images/ko/kino-create-by-ner.png?raw=true)
 
 이렇게 Scheduling 기능까지 추가를 완료하였습니다!
+
 
 ## Example
 
@@ -155,10 +159,10 @@ schedule Package를 이용하면 제가 작업하면 되는 부분은
 
 위의 예시들은 실제로 제가 사용하고 있는 Scheduling Job 들 입니다.
 
-이 정도면 제법 개인 비서처럼 행동할 수 있을 것 같지 않나요??  
+이 정도면 제법 개인 비서처럼 행동할 수 있을 것 같지 않나요? :D  
 이렇게 Kino 는 똑똑해지고 저를 위한 비서가 되고 있습니다!
 
-다음에는 손쉽게 Todoist에 있는 작업들을, Trello에 카드를 통해 관리하며.. 자동으로 Toggl에 시간 기록까지 되고, 마지막에는 작업 리포트도 받을 수 있는 **T3** 기능에 대해서 다루도록 하겠습니다. 
+다음에는 손쉽게 Todoist에 있는 작업들을, Trello에 카드를 통해 관리하며.. 자동으로 Toggl에 시간 기록까지 되고, 마지막에는 작업 리포트도 받을 수 있는 **T3** 기능에 대해서 다루도록 하겠습니다.
 
 모든 코드는 [여기서](https://github.com/DongjunLee/kino-bot) 확인하실 수 있습니다.  
-Kino를 더욱 똑똑하게 만들도록 도와주시는 분들은 언제든 환영입니다^^
+Kino를 더욱 똑똑하게 만들도록 도와주시는 분들은 언제든 환영입니다^^

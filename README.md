@@ -64,6 +64,7 @@
 - [Deep Learning](#deep-learning)
 - [Git](#git)
 - [Image Processing](#image-processing)
+- [Insight](#insight)
 - [Machine Learning](#machine-learning)
 - [Nature Language Processing](#nature-language-processing)
 - [Linux](#linux)
@@ -109,6 +110,9 @@
 #### Java
 - [Exception을 다루는 방법](Java/handle_Exception.md)
 - [Java Static Analysis + Jenkins](Java/Jenkis_Static_Analysis.md)
+
+#### Insight
+- [Tech HR 컨퍼런스 참석 후기](Insight/Tech_HR_2017_Review.md)
 
 #### Image Processing
 - [Cartoon-ify](Image_Processing/catoon-ify.md)

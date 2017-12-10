@@ -97,6 +97,7 @@
 	- Model 
 		- [Dropout](Deep_Learning/Deep_Learning_Papers/Model-Dropout.md) (2012, 2014)
 		- [Batch normalization](Deep_Learning/Deep_Learning_Papers/Model-Batch_normalization.md) (2015) by Ioffe, Sergey, and Christian Szegedy.
+		- [Layer Normalization](Deep_Learning/Deep_Learning_Papers/Model-Layer_Normalization.md) (2016)
 	- Unsupervised Learning / Deep Generative Model
 		- [Auto-Encoding Variational Bayes](Deep_Learning/Deep_Learning_Papers/Auto-Encoding_Variational_Bayes.md) (2015) by Kingma, Diederik P., and Max Welling
 - [Tensorboard-Basic](Deep_Learning/Tensorboard-Basic.md)

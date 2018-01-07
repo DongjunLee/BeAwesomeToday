@@ -21,11 +21,11 @@
   <img src="images/awesome.jpg" width=300>
 </p>
 
-## My Awesome List
+# My Awesome List
 
  공부하고 있거나, 봤던 자료들을 모아 놓는 Awesome List입니다.
 
-### Categories
+## Categories
 
 - [AI](AI/Awesome-AI.md)
 - [Algorithm](Algorithm/Awesome-AIgorithm.md)
@@ -47,7 +47,7 @@
   <img src="images/til.png" width=300>
 </p>
 
-## Today I Learned
+# Today I Learned
 
 새로 알게된 지식들을 정리하고 공유합니다.  
 
@@ -55,7 +55,7 @@
 - 간단한 설명
 - 예시 코드와 함께
 
-### Categories
+## Categories
 
 - [AWS](#aws)
 - [Chat Bot](#chat-bot)
@@ -72,24 +72,24 @@
 - [Python](#python)
 
 
-### Contents
+## Contents
 
-#### AWS
-- [AWS Lambda와 API Gateway를 통한 Serverless Architecture 특집 (윤석찬)](AWS/Serverless_Architecture_seminar.md)
-- [API Gateway request 설정](AWS/Request_object_API_Gateway.md)
-- [AWS Lambda Tips](AWS/Lambda_Tips.md)
+### AWS
+- [AWS Lambda와 API Gateway를 통한 Serverless Architecture 특집 (윤석찬)](AWS/Serverless_Architecture_seminar.md) ****`Serverless`****
+- [API Gateway request 설정](AWS/Request_object_API_Gateway.md) ****`API Gateway`****
+- [AWS Lambda Tips](AWS/Lambda_Tips.md) ****`Lambda`****
 
-#### Chat Bot
-- [Slaker와 Asyncio](Chat_Bot/slacker_and_asyncio.md)
+### Chat Bot
+- [Slaker와 Asyncio](Chat_Bot/slacker_and_asyncio.md) ****`Slack Bot`****
 
-#### Coding
-- [Iterator Pattern](Code/Iterator.md)
-- [손코딩 뇌컴파일 눈디버깅 수련법](Code/HandCoding_BrainCompile_EyeDebugging.md)
+### Coding
+- [Iterator Pattern](Code/Iterator.md) ****`Design Pattern`****
+- [손코딩 뇌컴파일 눈디버깅 수련법](Code/HandCoding_BrainCompile_EyeDebugging.md) ****`Practice`****
 
-#### CSS
+### CSS
 - [CSS Units, 길이 단위](CSS/CSS_Units.md)
 
-#### Deep Learning
+### Deep Learning
 
 - Deep Learning Papers migrate to [hb-research/notes](https://github.com/hb-research/notes)
 - [Tensorboard-Basic](Deep_Learning/Tensorboard-Basic.md)
@@ -98,39 +98,39 @@
 - [Deep Learning Tricks & Tips](Deep_Learning/DL_Tricks_and_Tips.md)
 - [Higher-Level APIs in TensorFlow](Deep_Learning/TensorFlow-High-API.md)
 
-#### Git
-- [Git Hooks](Git/git-hooks.md)
+### Git
+- [Git Hooks](Git/git-hooks.md) ****`Hook`****
 
-#### Java
-- [Exception을 다루는 방법](Java/handle_Exception.md)
-- [Java Static Analysis + Jenkins](Java/Jenkis_Static_Analysis.md)
+### Java
+- [Exception을 다루는 방법](Java/handle_Exception.md) ****`Exception`****
+- [Java Static Analysis + Jenkins](Java/Jenkis_Static_Analysis.md) ****`Jenkins`****
 
-#### Insight
-- [Tech HR 컨퍼런스 참석 후기](Insight/Tech_HR_2017_Review.md)
+### Insight
+- [Tech HR 컨퍼런스 참석 후기](Insight/Tech_HR_2017_Review.md) ****`Developer`****, ****`Insight`****
 
-#### Image Processing
-- [Cartoon-ify](Image_Processing/catoon-ify.md)
+### Image Processing
+- [Cartoon-ify](Image_Processing/catoon-ify.md) ****`SimpleCV`****, ****`Filter`****
 
-#### Linux
+### Linux
 - [SSH Background Processing](Linux/ssh_background_processing.md)
 
-#### Machine Learning
-- [Gradient Boosting](Machine_Learning/Gradient_Boosting.md)
+### Machine Learning
+- [Gradient Boosting](Machine_Learning/Gradient_Boosting.md) ****`Boosting`****
 
-#### Nature Language Processing
-- [CoNLL](Nature_Language_Processing/CoNLL.md)
-- [Word2Vec Summary](Nature_Language_Processing/Word2Vec_summary.md)
+### Nature Language Processing
+- [CoNLL](Nature_Language_Processing/CoNLL.md) ****`POS & Dependency Format`****
+- [Word2Vec Summary](Nature_Language_Processing/Word2Vec_summary.md) ****`Word2Vec`****
 
-#### Python
-- [Pickle Protocol](Python/Pickle_Protocols.md)
-- [PEP8_Kor](Python/PEP_8/README.md)
-- [Effective Python Notes](Python/Effective_Python_Summary/README.md)
-- [Set up and use a virtual python environment](Python/set_up_virtualenvwrapper.md)
-- [Data Structures in Python 3](Python/Data_structure.md)
-- [Error Handling in Python](Python/Error_Handling_in_Python.md)
-- [Instance, Class, and Static Methods](Python/Instance_Class_and_Static_Methods.md)
-- [The Fun of Reinvention](Python/The_Fun_of_reinvention.md)
-- [Python API Checklist](Python/Python_API_and_Library_CheckList.md)
+### Python
+- [Pickle Protocol](Python/Pickle_Protocols.md) ****`Pickle`****
+- [PEP8_Kor](Python/PEP_8/README.md) ****`Style`****
+- [Effective Python Notes](Python/Effective_Python_Summary/README.md) ****`Book`****
+- [Set up and use a virtual python environment](Python/set_up_virtualenvwrapper.md) ****`Env`****
+- [Data Structures in Python 3](Python/Data_structure.md) ****`Data Structure`****, ****`Collections`****
+- [Error Handling in Python](Python/Error_Handling_in_Python.md) ****`Exception`****
+- [Instance, Class, and Static Methods](Python/Instance_Class_and_Static_Methods.md) ****`Scope`****
+- [The Fun of Reinvention](Python/The_Fun_of_reinvention.md) ****`Meta Class`****
+- [Python API Checklist](Python/Python_API_and_Library_CheckList.md) ****`API`****
 
 
 -------------------------------------------------
@@ -141,21 +141,23 @@
   </a>
 </p>
 
-## HumanBrain 
+# HumanBrain 
 
 Personal Blog for Develop, Research, Tech, Projects, Life, Etc...
 
-### Articles
+## Articles
 
-- [지식 체화법](Blog/think_embodied.md) ![tags](https://img.shields.io/badge/Productivity--green.svg?style=social)
-- [HighFashion 프로젝트](Blog/Highfashion_Project.md) ![tags](https://img.shields.io/badge/Deep_Learning--green.svg?style=social)![tags](https://img.shields.io/badge/Project--green.svg?style=social)
-- [BeHappy 프로젝트 시작!](Blog/Start_QS_project.md) ![tags](https://img.shields.io/badge/Quantified_Self--green.svg?style=social)
-- [Node.js를 통해 Slack bot만들기](build_slack_bot_with_nodejs.md) ![tags](https://img.shields.io/badge/Slack_Bot--green.svg?style=social)
-- [샐러드를 먹는 스타트업을 위한 Salady Bot 개발기!](Blog/Salady_bot_for_startup.md) ![tags](https://img.shields.io/badge/Slack_Bot--green.svg?style=social)
-- [Data and Machine Learning Newsletter.](Blog/data_and_ml_newsletter.md) ![tags](https://img.shields.io/badge/Newsletter--green.svg?style=social)![tags](https://img.shields.io/badge/Data--green.svg?style=social)![tags](https://img.shields.io/badge/MachineLearning--green.svg?style=social)
+- [지식 체화법](Blog/think_embodied.md)  ****`Productivity`**** 
+- [HighFashion 프로젝트](Blog/Highfashion_Project.md) ****`Deep Learning`****, ****`Project`****
+- [BeHappy 프로젝트 시작!](Blog/Start_QS_project.md) ****`Quantified Self`****
+- [Node.js를 통해 Slack bot만들기](build_slack_bot_with_nodejs.md) ****`Slack Bot`**** 
+- [샐러드를 먹는 스타트업을 위한 Salady Bot 개발기!](Blog/Salady_bot_for_startup.md) ****`Slack Bot`**** 
+- [Data and Machine Learning Newsletter.](Blog/data_and_ml_newsletter.md) ****`News Letter`****, ****`Data`****, ****`Machine Learning`**** 
 
-#### kino-bot
+### kino-bot  
 
-- [Personal Assistant Kino Part 1. Overview](Blog/Personal_Assistant_Kino_Part_1.md) ![tags](https://img.shields.io/badge/Slack_Bot--green.svg?style=social)![tags](https://img.shields.io/badge/Personal_Assistant--green.svg?style=social)![tags](https://img.shields.io/badge/Quantified_Self--green.svg?style=social)
-- [Personal Assistant Kino Part 2. Skill & Scheduling](Blog/Personal_Assistant_Kino_Part_2_Skill_and_Scheduler.md) ![tags](https://img.shields.io/badge/Slack_Bot--green.svg?style=social)![tags](https://img.shields.io/badge/Personal_Assistant--green.svg?style=social)![tags](https://img.shields.io/badge/Quantified_Self--green.svg?style=social)
-- [Personal Assistant Kino Part 3. T3](Blog/Personal_Assistant_Kino_Part_3-T3.md) ![tags](https://img.shields.io/badge/Slack_Bot--green.svg?style=social)![tags](https://img.shields.io/badge/Personal_Assistant--green.svg?style=social)![tags](https://img.shields.io/badge/Quantified_Self--green.svg?style=social)
+[Github]() | ****`Slack Bot`****, ****`Personal Assistant`****, ****`Quantified Self`****, 
+
+- [Personal Assistant Kino Part 1. Overview](Blog/Personal_Assistant_Kino_Part_1.md) 
+- [Personal Assistant Kino Part 2. Skill & Scheduling](Blog/Personal_Assistant_Kino_Part_2_Skill_and_Scheduler.md)
+- [Personal Assistant Kino Part 3. T3](Blog/Personal_Assistant_Kino_Part_3-T3.md)

@@ -2,7 +2,7 @@
 
 ## Class Diagram
 
-![class_diagram](./1. Iterator.png)
+![class_diagram](./1.Iterator.png)
 
 
 Aggregator : 자료구조  

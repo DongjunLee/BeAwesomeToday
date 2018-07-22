@@ -108,7 +108,7 @@
 
 ### Insight
 - [Tech HR 컨퍼런스 참석 후기](Insight/Tech_HR_2017_Review.md) ****`Developer`****, ****`Insight`****
-- [Seeing vs Reading](Insight/Tech_HR_2017_Review.md) ****`Creative`****, ****`Verbal Thinking`****, ****`Visual Thinking`****
+- [Seeing vs Reading](Insight/Seeing_vs_reading.md) ****`Creative`****, ****`Verbal Thinking`****, ****`Visual Thinking`****
 
 ### Image Processing
 - [Cartoon-ify](Image_Processing/catoon-ify.md) ****`SimpleCV`****, ****`Filter`****

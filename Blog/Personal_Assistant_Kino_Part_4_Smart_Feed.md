@@ -21,7 +21,7 @@ RSS Feed는 많은 웹사이트에서 제공하는 RSS를 사용해서 새로운
 
 > RSS(Rich Site Summary)는 뉴스나 블로그 사이트에서 주로 사용하는 콘텐츠 표현 방식이다. 웹 사이트 관리자는 RSS 형식으로 웹 사이트 내용을 보여 준다. 이 정보를 받는 사람은 다른 형식으로 이용할 수 있다.RSS 리더에는 웹기반형과 설치형이 있다. 웹기반형 리더는 간단한 계정등록으로 어디에서든 이용할 수 있다는 장점을 가지고 있다. - 위키백과 RSS
 
-기본적으로 많은 웹사이트들이 RSS를 제공하고 있습니다. 그리고 이것을 이용하는 서비스들도 많이 있지요. 그 중 하나가 [`Feedly`](https://feedly.com/) 라는 서비스 입니다. 자주 들어가서 보는 사이트들을 등록해두면, 편하게 새로운 글들을 볼 수 있습니다. 물론 이 서비스를 잘 사용하고 있었지만, 제가 원하는 기능들을 전부 지원하고 있지는 않았습니다.
+기본적으로 많은 웹사이트들이 RSS를 제공하고 있습니다. 그리고 이것을 이용하는 서비스들도 많이 있지요. 그 중 하나가 [`Feedly`](https://feedly.com/) 라는 서비스 입니다. 자주 들어가서 보는 사이트들을 등록해두면, 편하게 새로운 글들을 볼 수 있습니다. 저는 이 서비스를 잘 사용하고 있었지만, 제가 원하는 기능들을 전부 지원하고 있지는 않았습니다.
 
 
 ## Pocket
@@ -37,7 +37,7 @@ RSS Feed는 많은 웹사이트에서 제공하는 RSS를 사용해서 새로운
 
 저는 이렇게 새로운 글들을 훑어보고, 관심있는 글들을 Pocket에 저장하고, 읽다가 좋다고 느껴지는 글을 Favorite로 옮기는 저의 패턴을 자동화하고 싶었습니다. 그래서 생각하고 만들게 된 기능이 `Smart Feed` 입니다. 
 
-먼저 이 기능에 필요한 것은 RSS 주소들 입니다. 그래야 여기서 RSS를 읽고 새로운 글이 나오면 저장을 하던 알림을 주던 할 수 있겠죠. 그래서 만들게 된 [awesome-feeds](https://github.com/DongjunLee/awesome-feeds) repository 입니다. 자주 보는 웹사이트들의 RSS를 Git으로 관리를 하면 편할 것 같기도 하고, 여러 좋은 RSS 주소를 가지고 있는 `awesome` 시리즈로 만들고 싶었습니다.
+먼저 이 기능에 필요한 것은 RSS 주소들 입니다. 그래야 여기서 RSS를 읽고 새로운 글이 나오면 저장을 하던 알림을 주던 할 수 있겠죠. 그래서 만들게 된 [awesome-feeds](https://github.com/DongjunLee/awesome-feeds) Repository 입니다. 자주 보는 웹사이트들의 RSS를 Git으로 관리를 하면 편할 것 같기도 하고, 여러 좋은 RSS 주소를 가지고 있는 `awesome` 시리즈로 만들고 싶었습니다.
 
 이제 RSS가 준비 되었으니, 최신 글이 등록되면 알림을 주면 됩니다!  
 여기에서는 [feedparser](https://github.com/kurtmckee/feedparser)를 사용했습니다.
@@ -62,7 +62,7 @@ if feed_url in cache_data:
 
 스케쥴 기능은 [2편 Skill & Scheduller](./Personal_Assistant_Kino_Part_2_Skill_and_Scheduler.md) 에서 다룬 것처럼 지정할 수 있습니다. 매분마다 Feed를 새로 확인하는 것은 과부하가 크기 때문에, 제가 테스트를 해봤을 때는 20분 정도의 interval이면 충분하다고 느껴졌습니다.
 
-```
+```python
 def __excute_feed_schedule(self, interval):
     schedule.every(interval).minutes.do(
         self.__run_threaded,
@@ -89,14 +89,15 @@ def __excute_feed_schedule(self, interval):
 
 Decision Tree는 `scikit-learn` 을 이용하면 아주 간단하게 사용할 수 있습니다.
 
-```
+```python
 class FeedClassifier:
     def __init__(self):
         train_X = FeedData().train_X
         train_y = FeedData().train_y
         
-        self.clf = tree.DecisionTreeClassifier()
-        self.clf = self.clf.fit(train_X, train_y)
+        model = tree.DecisionTreeClassifier()
+        model.fit(train_X, train_y)  # Training
+        self.clf = model
 
     def predict(self, link, category):
         result = self.clf.predict(category_id)[0]
@@ -119,7 +120,7 @@ class FeedClassifier:
 1. Logging: 알람을 받고 있는 Feed의 모든 정보들, 그 중에서 Pocket에 저장한 Feed들 정보
 2. Data Processing: Log를 파싱하여 카테고리, 제목, 날짜, 링크 등의 정보로 가공하고, 라벨 또한 추가해줍니다. (0: Pocket에 추가하지 않음 / 1: Pocket에 추가)
 3. Model: 준비된 데이터를 모델에 Fit 시킵니다. (Training)
-4. Predict: 훈련된 모델을 기반으로 새로운 Feed를 보고 Pocket에 저장할지 말지 판단합니다.
+4. Predict: 훈련된 모델을 기반으로 새로운 Feed를 보고 Pocket에 저장할지 말지 판단합니다. 그리고 이때 모델이 잘못 내린 판단에 대해서 Feedback을 제공하여 올바른 라벨이 저장되도록 합니다.
 
 여기서 실시간으로 학습하는 것이 부담이 된다면, 하루에 한번 새로 학습시키는 것도 방법이 될 수 있을 것 입니다.
 

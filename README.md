@@ -5,7 +5,7 @@
 <p align="center">
   <sup><strong>
     My Awesome List & Today I Learned & Blogging Articles. <br/> 
-    <a href="http://humanbrain.in">Blog</a>
+    <a href="https://dongjunlee.github.io/">Blog</a>
   </sup>
 </p>
 
@@ -163,3 +163,4 @@ Personal Blog for Develop, Research, Tech, Projects, Life, Etc...
 - [Personal Assistant Kino Part 1. Overview](Blog/Personal_Assistant_Kino_Part_1.md) 
 - [Personal Assistant Kino Part 2. Skill & Scheduling](Blog/Personal_Assistant_Kino_Part_2_Skill_and_Scheduler.md)
 - [Personal Assistant Kino Part 3. T3](Blog/Personal_Assistant_Kino_Part_3-T3.md)
+- [Personal Assistant Kino Part 4. Smart Feed](Blog/Personal_Assistant_Kino_Part_4_Smart_Feed.md)

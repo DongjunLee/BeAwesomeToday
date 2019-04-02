@@ -98,6 +98,7 @@
 - [Learning to protect communications with adversarial neural cryptography](Deep_Learning/Learning_to_protect_communications_with_adversarial_neural_cryptography.md)
 - [Deep Learning Tricks & Tips](Deep_Learning/DL_Tricks_and_Tips.md)
 - [Higher-Level APIs in TensorFlow](Deep_Learning/TensorFlow-High-API.md)
+- [PyTorch - under the hood](Deep_Learning/PyTorch-under-the-hood.md)
 
 ### Git
 - [Git Hooks](Git/git-hooks.md) ****`Hook`****
